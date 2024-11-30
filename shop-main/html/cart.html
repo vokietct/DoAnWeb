@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>BKHT Cart</title>
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <header id="top" class="dau">
+      <!--Thương hiệu-->
+      <div class="thuonghieu">
+        <div class="th">
+          <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+          <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+        </div>
+      </div>
+
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="sanpham.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query" 
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button> 
+        </form>
+      </div>
+
+      <!--Phần menu-->
+
+        <!-- Menu -->
+        <div class="menu">
+          <div class="thongtin">
+            <div class="thongtincon" id="small" onclick="toggleTooltip()">
+              <i class="bx bx-user-circle"></i>
+              <div class="tooltip">
+                <div class="tooltip-1">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScT_mFJcmtcWjfwLFCXxRcA9LcZsGlLV3enA&s" alt="anhdaidien">
+                  <h4>Xin chào , Steve!</h4>
+                </div>
+                <div class="tooltip-2">
+                  <h5>Thông báo</h5>
+                  <hr>
+                  <div class="tooltip-2-nd-thongbao">
+                    <p>Trống</p>
+                  </div>
+                </div>
+                <div class="tooltip-4">
+                  <a href="cart_history.html">Lịch sử giỏ hàng</a>
+                </div>
+                <div class="tooltip-3">
+                  <a href="index.html">Đăng xuất</a>
+                </div>
+              </div>
+            </div>
+            <div class="overlay" onclick="hideTooltip()"></div>
+            <div class="thongtincon-1">
+              <i class="bx bx-phone"></i>
+              <div class="dathang">
+                <a href="#">Đặt hàng</a>
+                <a href="#">1800.1915</a>
+              </div>
+            </div>
+            <div class="thongtincon-1">
+              <i class="bx bx-map"></i>
+              <a href="#1">TP.HCM</a>
+            </div>
+            <div class="thongtincon" id="giohang">
+              <i class="bx bx-cart-download"></i>
+              <a href="cart.html">Giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="cart-container">
+      <div class="cart-item-1">
+        <a href="trangchu.html">
+          <i class="bx bx-left-arrow-alt"></i>
+        </a>
+        <h3>Giỏ hàng của bạn</h3>
+      </div>
+
+      <hr />
+
+      <div class="cart-item-2">
+        <div class="left">
+          <i class="bx bx-square-rounded" id="icon1"></i>
+          <span>Chọn tất cả</span>
+        </div>
+        <div class="right">
+          <span>Xóa sản phẩm đã chọn</span>
+        </div>
+      </div>
+
+      <div class="cart-item-3">
+        <div class="cart-item-3-left">
+          <i class="bx bx-square-rounded"></i>
+          <div class="cart-item-3-left-img">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:350:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/m/image_1172.png"
+              alt="anh1"
+            />
+          </div>
+        </div>
+
+        <div class="cart-item-3-right">
+          <div class="cart-item-3-right-top">
+            <a href="sanpham.html">Samsung Galaxy Z Fold6</a>
+            <i class="bx bx-trash"></i>
+          </div>
+          <div class="cart-item-3-right-bottom">
+            <p>41.990.000đ</p>
+            <div class="cart-item-3-right-bottom-sl">
+              <i class="bx bx-minus"></i>
+              <span>1</span>
+              <i class="bx bx-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-item-4">
+        <div class="cart-item-4-tieude">
+          <i class="bx bx-gift"></i>
+          <h4>Chuơng trình khuyến mãi</h4>
+        </div>
+        <div class="cart-item-4-nd">
+          <ul>
+            <li>
+              Tặng ngay Đồng hồ Samsung Watch FE 40mm trị giá 4.990.000đ (Không
+              lấy quà hoàn 2.2 triệu)
+            </li>
+            <li>Giảm 1.000.000đ qua QR bank</li>
+            <li>Quyền lợi bảo hành Vip 12 tháng 1 đổi 1 tại BKHT SHOP</li>
+            <li>Trợ giá tối đa đến 2.000.000đ khi thu cũ đổi mới</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="cart-item-5">
+        <div class="cart-item-4-tieude">
+          <i class="bx bx-shopping-bag"></i>
+          <h4>Mua kèm tiết kiệm hơn</h4>
+        </div>
+        <div class="cart-item-5-nd">
+          <div class="cart-item-5-nd-1">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/e/f/ef-mf956t_001_front_gray_240514.png"
+              alt="anh1"
+            />
+            <p>Ốp Samsung giảm 70%</p>
+            <div><a href="sanpham.html">Xem ngay</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ngancach"></div>
+
+      <div class="cart-item-3">
+        <div class="cart-item-3-left">
+          <i class="bx bx-square-rounded"></i>
+          <div class="cart-item-3-left-img">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:350:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-den.png"
+              alt="anh1"
+            />
+          </div>
+        </div>
+
+        <div class="cart-item-3-right">
+          <div class="cart-item-3-right-top">
+            <a href="sanpham.html">iPhone 16 Pro Max 256GB</a>
+            <i class="bx bx-trash"></i>
+          </div>
+          <div class="cart-item-3-right-bottom">
+            <p>34.790.000đ</p>
+            <div class="cart-item-3-right-bottom-sl">
+              <i class="bx bx-minus"></i>
+              <span>2</span>
+              <i class="bx bx-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-item-4">
+        <div class="cart-item-4-tieude">
+          <i class="bx bx-gift"></i>
+          <h4>Chuơng trình khuyến mãi</h4>
+        </div>
+        <div class="cart-item-4-nd">
+          <ul>
+            <li>Ưu đãi thanh toán giảm thêm đến 1.6 triệu</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="cart-item-5">
+        <div class="cart-item-4-tieude">
+          <i class="bx bx-shopping-bag"></i>
+          <h4>Mua kèm tiết kiệm hơn</h4>
+        </div>
+        <div class="cart-item-5-nd">
+          <div class="cart-item-5-nd-1">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/o/p/op-lung-iphone-16-pro-max-uag-monarch-pro_4_.png"
+              alt="anh1"
+            />
+            <p>Ốp iPhone giảm 30%</p>
+            <div><a href="sanpham.html">Xem ngay</a></div>
+          </div>
+          <div class="cart-item-5-nd-1">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_-_2024-10-22t094735.484.png"
+              alt="anh2"
+            />
+            <p>Miếng dán giảm 10%</p>
+            <div><a href="sanpham.html">Xem ngay</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-item-6">
+        <div class="cart-item-6-tieude">
+          <i class="bx bx-home-heart bx-tada"></i>
+          <h4>Địa chỉ giao hàng</h4>
+        </div>
+        <div class="cart-item-6-nd-1">
+          <input type="radio" id="existingAddress" name="address" checked />
+          <label for="existingAddress">Chọn địa chỉ từ tài khoản</label>
+          <select id="addressSelect">
+            <option value="address1">Thành Phố Hồ Chí Minh</option>
+            <option value="address2">Thủ đô Hà Nội</option>
+            <option value="address3">Thủ đô Thủ Đức</option>
+            <option value="address4">Thủ đô Đà Nẵng</option>
+          </select>
+        </div>
+        <br />
+        <div class="cart-item-6-nd-2">
+          <input type="radio" id="newAddress" name="address" />
+          <label for="newAddress"
+            >Nhập địa chỉ giao hàng mới-(Hãy điền thông tin)</label
+          >
+        </div>
+        <div id="newAddressFields">
+          <input type="text" id="newAddressLine1" placeholder="Địa chỉ 1" />
+          <input type="text" id="newAddressLine2" placeholder="Địa chỉ 2" />
+          <input type="text" id="newCity" placeholder="Thành phố" />
+          <input type="text" id="newState" placeholder="Tỉnh/Bang" />
+          <input type="text" id="newZip" placeholder="Mã bưu điện" />
+        </div>
+      </div>
+
+      <div class="cart-item-7">
+        <div class="cart-item-6-tieude">
+          <i class="bx bx-money"></i>
+          <h4>Phương thức thanh toán</h4>
+        </div>
+        <div class="cart-item-6-nd-2">
+          <input type="radio" id="newAddress" name="address" />
+          <label for="newAddress">Thanh toán tiền mặt</label>
+        </div>
+        <br />
+        <div class="cart-item-6-nd-2">
+          <input type="radio" id="newAddress" name="address" />
+          <label for="newAddress">Chuyển khoản</label>
+        </div>
+        <br />
+        <div class="cart-item-6-nd-2">
+          <input type="radio" id="newAddress" name="address" />
+          <label for="newAddress"
+            >Thanh toán qua thẻ-(Hãy điền thông tin)</label
+          >
+        </div>
+        <div id="creditCardFields">
+          <input type="text" id="cardNumber" placeholder="Số thẻ" />
+          <input type="text" id="cardName" placeholder="Tên trên thẻ" />
+          <input
+            type="text"
+            id="cardExpiry"
+            placeholder="Ngày hết hạn (MM/YY)"
+          />
+          <input type="text" id="cardCVC" placeholder="CVC" />
+        </div>
+      </div>
+
+      <div class="cart-item-8">
+        <div class="cart-item-6-tieude">
+          <i class="bx bx-subdirectory-right"></i>
+          <h4>Tóm tắt hóa đơn</h4>
+        </div>
+        <div class="cart-item-8-tomtat">
+          <p>Sản phẩm 1: 41.990.000đ</p>
+          <p>Sản phẩm 2: 37.790.000đ</p>
+          <p>Tổng cộng: 76.780.000đ</p>
+        </div>
+      </div>
+
+      <div class="trong"></div>
+
+      <div class="muangay">
+        <div class="muangay-left">
+          <div>
+            <h4>Phí Ship:</h4>
+            <h5>25.000đ</h5>
+          </div>
+          <p>Chưa chiết khấu</p>
+        </div>
+        <div class="muangay-right">
+          <div class="button">
+            <a href="">Mua Ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#top" class="scroll-to-top"><i class="bx bxs-upvote"></i></a>
+
+    <script src="../js/d.js"></script>
+  </body>
+</html>

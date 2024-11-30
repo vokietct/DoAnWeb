@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Phone Store </title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/ngoaile.css" />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" style="background-color: black">
+          <a href="https://www.thegioididong.com/" target="_blank">
+            <img
+              src="https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fbanners%2F2024%2F8%2F30%2F1%2F1727685880678_header_780_x_100.jpg&w=384&q=75"
+              alt="Anh1"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: #e9efff">
+          <a href="https://cellphones.com.vn/" target="_blank">
+            <img
+              src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Giao%20hang.svg"
+              alt="Anh2"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: #e9efff">
+          <a href="#" target="_blank">
+            <img
+              src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Thu%20cu.svg"
+              alt="Anh3"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: #e9efff">
+          <a href="#" target="_blank">
+            <img
+              src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Chinh%20hang.svg"
+              alt="Anh4"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: rgba(255, 166, 0, 0.899)">
+          <a href="https://didongviet.vn/" target="_blank">
+            <img
+              src="https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fbanners%2F2024%2F9%2F8%2F1%2F1728389479729_header_03.png&w=1920&q=75"
+              alt="Anh5"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <header id="top" class="dau">
+      <!--Thương hiệu-->
+      <div class="thuonghieu">
+        <div class="th">
+          <img class="thuonghieu1" src="../img/logo.png" alt="anh2" />
+          <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+        </div>
+      </div>
+
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="sanpham.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query"
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button>
+        </form>
+      </div>
+
+      <div class="menu">
+        <div class="thongtin">
+          <div class="thongtincon" id="small" onclick="toggleTooltip()">
+            <i class="bx bx-user-circle"></i>
+            <div class="tooltip">
+              <div class="tooltip-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScT_mFJcmtcWjfwLFCXxRcA9LcZsGlLV3enA&s" alt="anhdaidien">
+                <h4>Xin chào , Steve!</h4>
+              </div>
+              <div class="tooltip-2">
+                <h5>Thông báo</h5>
+                <hr>
+                <div class="tooltip-2-nd-thongbao">
+                  <p>Trống</p>
+                </div>
+              </div>
+              <div class="tooltip-4">
+                <a href="cart_history.html">Lịch sử giỏ hàng</a>
+              </div>
+              <div class="tooltip-3">
+                <a href="index.html">Đăng xuất</a>
+              </div>
+            </div>
+          </div>
+          <div class="overlay" onclick="hideTooltip()"></div>
+          <div class="thongtincon-1">
+            <i class="bx bx-phone"></i>
+            <div class="dathang">
+              <a href="#">Đặt hàng</a>
+              <a href="#">1800.1915</a>
+            </div>
+          </div>
+          <div class="thongtincon-1">
+            <i class="bx bx-map"></i>
+            <a href="#1">TP.HCM</a>
+          </div>
+          <div class="thongtincon" id="giohang">
+            <i class="bx bx-cart-download"></i>
+            <a href="cart.html">Giỏ hàng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <!-- Đường dẫn -->
+    <div class="duongdan">
+      <div class="nd_duongdan">
+        <i class="bx bx-home" style="color: #297be0b1"></i>
+        <a href="trangchu.html">Trang chủ</a>
+        <i class="bx bxs-chevrons-right" style="margin-right: 5px"></i>
+        <p>Tuyển dụng</p>
+      </div>
+    </div>
+
+    <div class="td-container">
+        <div class="td-container-nd">
+            <div class="td-container-items">
+                <i class='bx bxs-star bx-flashing' ></i>
+                <h4>Leader Tester ERP</h4>
+            </div>
+            <div class="td-container-items">
+                <i class='bx bxs-star bx-flashing' ></i>
+                <h4>Middle/Senior DevOps Engineer</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="noituyendung-container">
+        <div class="noituyendung-menu">
+            <div class="khoi">
+                <div class="khoi-menu">
+                    <i class='bx bx-store' ></i>
+                    <p>Khối cửa hàng</p>
+                </div>
+                <p>Kĩ thuật phần mềm</p>
+                <p>Kĩ thuật sửa chữa</p>
+                <p>Thu ngân</p>
+                <p>Tư vấn bán hàng</p>
+                <p>Nhân viên kho hàng</p> 
+            </div>
+            <div class="khoi">
+                <div class="khoi-menu">
+                    <i class='bx bx-buildings'></i>
+                    <p>Khối văn phòng</p>
+                </div>
+                <p>Internship Program 2024</p>
+                <p>Kho Trung tâm</p>
+                <p>Phòng Data Engineer</p>
+                <p>Phòng Bảo hành</p>
+                <p>Nhân viên kho hàng</p> 
+                <p>Phòng ERP</p>
+                <p>Phòng Kinh doanh</p>
+                <p>Phòng Marketing</p>
+                <p>Phòng QC</p>
+                <p>Phòng SEO</p>
+                <p>Phòng Tài chính - Kế toán</p>
+                <p>Phòng Website</p>
+                <p>Phòng Xây dựng - Bảo trì</p>
+            </div>
+        </div>
+        <div class="noituyendung-nd">
+            <h3 style="margin: 3px;">10 Việc làm </h3>
+            <h4 style="margin: 3px;">Ở tất cả vị trí trên Thành phố Hồ Chí Minh</h4>
+            <div class="noituyendung-nd-items">
+                <h4>Khối văn phòng</h4>
+                <p>Internship Program 2024</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >23.000.000</i>
+                        <i class='bx bx-map' >Quận 6</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối văn phòng</h4>
+                <p>Senior Financial Planning & Analysis - Chuyên viên Kế hoạch và Phân tích tài chính</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >Thỏa thuận</i>
+                        <i class='bx bx-map' >Quận 1</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối văn phòng</h4>
+                <p>Kế Toán Trưởng</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >Thỏa thuận</i>
+                        <i class='bx bx-map' >Quận Tân Bình</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối văn phòng</h4>
+                <p>[Sforum] Biên tập viên nội dung mảng SEO & Game</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >14.000.000</i>
+                        <i class='bx bx-map' >Quận 3</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối văn phòng</h4>
+                <p>Nhân Viên Điều Phối hàng hóa</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >10.000.000</i>
+                        <i class='bx bx-map' >Quận Phú Nhuận</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối cửa hàng</h4>
+                <p>[ĐIỆN THOẠI VUI] Tư Vấn Bán Hàng</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >12.000.000</i>
+                        <i class='bx bx-map' >Quận 7-8-10</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối cửa hàng</h4>
+                <p>[ĐIỆN THOẠI VUI] Nhân Viên Thu Ngân</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >12.000.000</i>
+                        <i class='bx bx-map' >Nhà Bè</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối cửa hàng</h4>
+                <p>[ĐIỆN THOẠI VUI] Kỹ Thuật Thay Thế Linh Kiện (LV1)</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >12.000.000</i>
+                        <i class='bx bx-map' >Quận 2</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối cửa hàng</h4>
+                <p>QUẢN LÝ CỬA HÀNG</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >15.000.000++</i>
+                        <i class='bx bx-map' >Quận 5</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="noituyendung-nd-items">
+                <h4>Khối cửa hàng</h4>
+                <p>Nhân viên kĩ thuật phần mềm</p>
+                <div class="noituyendung-nd-items-ungtuyen">
+                    <div class="noituyendung-nd-items-ungtuyen-left">
+                        <i class='bx bx-money' >20.000.000</i>
+                        <i class='bx bx-map' >Bình Tân</i>
+                    </div>
+                    <div class="noituyendung-nd-items-ungtuyen-right">
+                        <button>Ứng tuyển ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Phần nút quay lại đầu trang -->
+     <a href="#top" class="scroll-to-top"><i class='bx bxs-upvote'></i></a>
+
+
+     <!-- Phần footer -->
+     <footer>
+       <div class="infoItems">
+         <h4>Tổng đài hỗ trợ miễn phí</h4>
+         <p>
+           Gọi mua hàng 1800.2097 (7h30 - 22h00)<br />
+           Gọi khiếu nại 1800.2063 (8h00 - 21h30)<br />
+           Gọi bảo hành 1800.2064 (8h00 - 21h00)<br />
+         </p>
+         <h4>Phương thức thanh toán</h4>
+         <div style="display: flex; flex-wrap: wrap;">
+           <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/vnpay-logo.png" alt="VNPay" />
+           <img src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/momo_1.png" alt="momo" />
+           <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/onepay-logo.png" alt="OnePay" />
+           <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/mpos-logo.png" alt="mPos" />
+         </div>
+       </div>
+       <div class="infoItems">
+         <h4>Thông tin và chính sách</h4>
+         <p>
+           Mua hàng và thanh toán Online<br />
+           Mua hàng trả góp Online<br />
+           Mua hàng trả góp bằng thẻ tín dụng<br />
+           Chính sách giao hàng<br />
+           Tra điểm Smember<br />
+           Xem ưu đãi Smember<br />
+           Tra thông tin bảo hành<br />
+           Tra cứu hoá đơn điện tử<br />
+           Thông tin hoá đơn mua hàng<br />
+           Trung tâm bảo hành chính hãng<br />
+         </p>
+       </div>
+       <div class="infoItems">
+         <h4>Dịch vụ và thông tin khách</h4>
+         <p>
+           Khách hàng doanh nghiệp (B2B)<br />
+           Ưu đãi thanh toán<br />
+           Quy chế hoạt động<br />
+           Chính sách bảo mật thông tin cá nhân<br />
+           Chính sách Bảo hành<br />
+           Liên hệ hợp tác kinh doanh<br />
+           Tuyển dụng<br />
+           Dịch vụ bảo hành mở rộng<br />
+           Smember: Tích điểm & sử dụng ưu đãi<br />
+         </p>
+       </div>
+       <div class="infoItems">
+         <h4>Kết nối với BKHT</h4>
+         <div>
+           <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-youtube.png" alt="YouTube" />
+           <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-facebook.png" alt="Facebook" />
+           <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-instagram.png" alt="Instagram" />
+           <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-tiktok.png" alt="TikTok" />
+           <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-zalo.png" alt="Zalo" />
+         </div>
+         <p>
+           Trung tâm bảo hành uỷ quyền Apple<br />
+           Trung tâm bảo hành uỷ quyền Apple<br />
+           Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+           Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+         </p>
+       </div>
+       <div class="rong"></div>
+     </footer>
+
+    <script src="../js/d.js"></script>
+</body>
+</html> 

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chi tiết sản phẩm</title>
+        <link rel="stylesheet" href="../css/trangchu.css" />
+        <link rel="stylesheet" href="../css/chitietsanpham(nologin).css" />
+        <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    </head>
+    <body>
+        <header id="top" class="dau">
+            <!--Thương hiệu-->
+            <div class="thuonghieu">
+              <div class="th">
+                <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+                <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+              </div>
+            </div>
+      
+            <!--Phần search-->
+            <div class="InputContainer">
+              <form action="sanpham.html" method="GET" class="search-form">
+                <input
+                  placeholder="Search"
+                  id="input"
+                  class="input"
+                  name="query" 
+                  type="text"
+                />
+                <!-- Button đóng vai trò là icon tìm kiếm -->
+                <button type="submit" class="labelforsearch">
+                  <div class="searchIcon">
+                    <i class="bx bx-search"></i>
+                  </div>
+                </button> 
+              </form>
+            </div>
+      
+            <!--Phần menu-->
+      
+              <!-- Menu -->
+              <div class="menu">
+                <div class="thongtin">
+                  <div class="thongtincon" id="small">
+                    <i class="bx bx-user-circle"></i>
+                    <a href="login.html">Đăng nhập</a>
+                  </div>
+                  <div class="thongtincon-1">
+                    <i class="bx bx-phone"></i>
+                    <div class="dathang">
+                      <a>Đặt hàng</a>
+                      <a>1800.1915</a>
+                    </div>
+                  </div>
+                  <div class="thongtincon-1">
+                    <i class="bx bx-map"></i>
+                    <a>TP.HCM</a>
+                  </div>
+                  <div class="thongtincon" onclick="alert('Bạn cần đăng nhập!')">
+                    <i class="bx bx-cart-download"></i>
+                    <a href="#">Giỏ hàng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        <div style="display: flex;">
+            <!-- hình sản phẩm -->
+            <div style="width: 60%;">
+                <h1>SamSung Galaxy S23</h1>
+                <img src="../img/tải xuống (1).jpg" width="50%" style="margin-left: 20%;"/>
+                <div style="display: flex;">
+                    <div style="border: 1px solid #888; border-radius: 5px; width: 45%; margin: 10px; padding: 5px; background-color: #297be06c;">
+                        <h3 style="text-decoration: underline;">Thông tin sản phẩm</h3>
+                        <p>Mới, đầy đủ phụ kiện từ nhà sản xuất<br>
+                            Hộp, Sách hướng dẫn, Cây lấy sim, Cáp Type C<br>
+                            Bảo hành 12 tháng tại trung tâm bảo hành Chính hãng. 1 đổi 1 trong 30 ngày nếu có lỗi phần cứng từ nhà sản xuất. (xem chi tiết)<br>
+                            Giá sản phẩm đã bao gồm VAT</p>
+                    </div>
+                    <form style="margin: 15px;">
+                        <select style="width: 150px; height: 50px; font-size: 18px;">
+                            <option value="HCM">Hồ Chí Minh</option>
+                            <option value="DN">Đà Nẵng</option>
+                            <option value="HN">Hà Nội</option>
+                        </select>
+                        <select style="width: 150px; height: 50px; font-size: 18px;">
+                            <option value="no">Quận/Huyện</option>
+                        </select>
+                        <div style="border: 2px solid #999; border-radius: 10px; overflow: hidden;">
+                            <div class="headerKhuyenmai">Các cửa hàng có sẵn</div>
+                            <div>
+                                <p>02871000218
+                                    – 
+                                   218-220 Trần Quang Khải, Phường Tân Định, Quận 1<br>
+                                   02871066159
+                                    – 
+                                   157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1<br>
+                                   02871000132
+                                    – 
+                                   134 Nguyễn Thái Học, P. Phạm Ngũ Lão, Q.1, TP HCM<br>
+                                   02871083355
+                                    – 
+                                   55B Trần Quang Khải, P. Tân Định, Q. 1<br>
+                                   02871000139
+                                    – 
+                                   139 Trần Não, P. Bình An, Quận 2<br>
+                                   02871010190
+                                    – 
+                                   190 Nguyễn Thị Định, khu phố 2, phường An Phú, quận 2<br>
+                                   02871067171
+                                    – 
+                                   177 Khánh Hội, P. 3, Q. 4</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <h2>Sản phẩm tương tự</h2>
+                    <div style="display: flex;">
+                        <div class="hotSaleItems">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/realme-c67-1_1.png" alt="Sanpham"/>
+                            <h4>realme C67</h4>
+                            <h3>Giá: 4.490.000đ</h3>
+                            <div class="Tong_saveBtn">
+                              <button class="saveBtn a">
+                                <a href="https://cellphones.com.vn/?gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL8bGgGMVPJqcrHt5_bbiKfm01zU5BFeV3qPpAi4k7Ajm2Rzct890uhoCET0QAvD_BwE" target="_blank">Xem chi tiết</a>
+                              </button>
+                            </div>
+                          </div>
+                    
+                          <div class="hotSaleItems">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/realme-c51_2_1.png" alt="Sanpham"/>
+                            <h4>realme C60 </h4>
+                            <h3>Giá: 2.390.000đ</h3>
+                            <div class="Tong_saveBtn">
+                              <button class="saveBtn a">
+                                <a href="https://cellphones.com.vn/?gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL8bGgGMVPJqcrHt5_bbiKfm01zU5BFeV3qPpAi4k7Ajm2Rzct890uhoCET0QAvD_BwE" target="_blank">Xem chi tiết</a>
+                              </button>
+                            </div>
+                          </div>
+                
+                          <div class="hotSaleItems">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/realme-c53-vang-1.png" alt="Sanpham"/>
+                            <h4>realme C53</h4>
+                            <h3>Giá: 3.790.000đ</h3>
+                            <div class="Tong_saveBtn">
+                              <button class="saveBtn a">
+                                <a href="https://cellphones.com.vn/?gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL8bGgGMVPJqcrHt5_bbiKfm01zU5BFeV3qPpAi4k7Ajm2Rzct890uhoCET0QAvD_BwE" target="_blank">Xem chi tiết</a>
+                              </button>
+                            </div>
+                          </div>
+                
+                          <div class="hotSaleItems">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-realme-note-60-4gb-64gb_1.png" alt="Sanpham"/>
+                            <h4>realme Note 60</h4>
+                            <h3>Giá: 2.090.000đ</h3>
+                            <div class="Tong_saveBtn">
+                              <button class="saveBtn a">
+                                <a href="https://cellphones.com.vn/?gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL8bGgGMVPJqcrHt5_bbiKfm01zU5BFeV3qPpAi4k7Ajm2Rzct890uhoCET0QAvD_BwE" target="_blank">Xem chi tiết</a>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="hotSaleItems">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-realme-c61_2_.png" alt="Sanpham"/>
+                            <h4>realme C61</h4>
+                            <h3>Giá: 3.980.000đ</h3>
+                            <div class="Tong_saveBtn">
+                              <button class="saveBtn a">
+                                <a href="https://cellphones.com.vn/?gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL8bGgGMVPJqcrHt5_bbiKfm01zU5BFeV3qPpAi4k7Ajm2Rzct890uhoCET0QAvD_BwE" target="_blank">Xem chi tiết</a>
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- thông tin sản phẩm -->
+            <div style="width: 40%;">
+                <div style="display: flex;">
+                    <div class="chonLoai">8G 124G <br/> 12.000.000</div>
+                    <div class="chonLoai">16G 256G <br/> 18.290.000</div>
+                    <div class="chonLoai">16G 512G <br/> 18.990.000</div>
+                </div>
+                <div style="display: flex;">
+                    <h3 style="margin: 2px;">Chọn màu</h3>
+                    <div class="chonMau"><img src="../img/tải xuống (1).jpg" width="25px"> Xanh</div>
+                    <div class="chonMau"><img src="../img/tải xuống (4).jpg" width="25px"> Đen</div>
+                    <div class="chonMau"><img src="../img/tải xuống (9).jpg" width="25px"> Tím</div>
+                    <div class="chonMau"><img src="../img/tải xuống (7).jpg" width="25px"> Trắng</div>
+                </div>
+                <!-- chương trình khuyến mãi và những thứ khác -->
+                <div style="border: 1px solid #888; border-radius: 10px; background-color: #297be0b1;">
+                    <p>Tiết kiệm thêm đến 137.000đ cho Smember
+    
+                        hoặc 600.000đ cho S-Student</p>
+                </div>
+                <div style="border: 1px solid #888; border-radius: 10px; overflow: hidden; margin: 2px;">
+                    <div class="headerKhuyenmai" style="background-color: #297be06c; padding: 10px;">Khuyến mãi</div>
+                    <div>
+                        <p>
+                            +1
+
+Trả góp 0% đến 12 tháng, 0đ trả trước qua Samsung Finance<br/>+
+2
+
+Giảm ngay 200K khi mua Samsung Fit 3 (không áp dụng cùng giảm giá qua galaxy gift, xem chi tiết sản phẩm và điều kiện áp dụng tại đây)
+                        </p>
+                    </div>
+                </div>
+                <!-- các chức năng thanh toán -->
+                <div>
+                    <button style="width: 100%" class="phimChot">Mua ngay<br/>Giao nhanh 2h</button>
+                    <div style="display: flex;">
+                    <button style="width:50%" class="phimChot">Trả góp 0%<br/>Trả trước chỉ 0đ</button>
+                    <button style="width:50%" class="phimChot">Trả góp 0% qua thẻ<br/>Không phí chuyển đổi</button></div>
+                    <button style="width: 100%" class="phimChot">Thu mua cũ lên đời<br/>Chỉ từ 11.000.000</button>
+                </div>
+                <div style="overflow: hidden; border:1px solid #888; border-radius: 10px; margin-top: 10px;">
+                    <div class="headerKhuyenmai">Ưu đãi thêm</div>
+                    <div>
+                        <p>Xem chính sách ưu đãi dành cho thành viên Smember <br>
+                            Giảm đến 500K khi thanh toán bằng thẻ ghi nợ Techcombank<br>
+                            Giảm đến 500K khi thanh toán qua VNPAY-QR<br>
+                            Hoàn tiền đến 2 triệu khi mở thẻ tín dụng HSBC<br>
+                           Kredivo Giảm đến 700.000đ khi thanh toán qua Kredivo<br>
+                           Liên hệ B2B để được tư vấn giá tốt nhất cho khách hàng doanh nghiệp khi mua số lượng nhiều</p>
+                    </div>
+                </div>
+                <div style="border: 1px solid #888; margin-top: 10px; border-radius: 5px; overflow: hidden;">
+                    <div style="background-color: #297be06c; padding: 5px;"><h3>Thông số kỹ thuật</h3></div>
+                    <table>
+                        <tr>
+                            <td>Kích thước màn hình</td>
+                            <td>6.1 inches</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ màn hình</td>
+                            <td>Dynamic AMOLED 2X</td>
+                        </tr>
+                        <tr>
+                            <td>Camera sau</td>
+                            <td>Camera chính 50 MP & Phụ 12 MP, 10 MP</td>
+                        </tr>
+                        <tr>
+                            <td>Camera trước</td>
+                            <td>12MP</td>
+                        </tr>
+                        <tr>
+                            <td>Chipset</td>
+                            <td>Snapdragon 8 Gen 2 for Galaxy</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ NFC</td>
+                            <td>Có</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng RAM</td>
+                            <td>8G</td>
+                        </tr>
+                        <tr>
+                            <td>Bộ nhớ trong</td>
+                            <td>128G</td>
+                        </tr>
+                        <tr>
+                            <td>Pin</td>
+                            <td>3900mAh</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            
+        </div>
+        <!-- Phần footer -->
+    <footer>
+        <div class="infoItems">
+          <h4>Tổng đài hỗ trợ miễn phí</h4>
+          <p>
+            Gọi mua hàng 1800.2097 (7h30 - 22h00)<br />
+            Gọi khiếu nại 1800.2063 (8h00 - 21h30)<br />
+            Gọi bảo hành 1800.2064 (8h00 - 21h00)<br />
+          </p>
+          <h4>Phương thức thanh toán</h4>
+          <div style="display: flex; flex-wrap: wrap;">
+            <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/vnpay-logo.png" alt="VNPay" />
+            <img src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/momo_1.png" alt="momo" />
+            <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/onepay-logo.png" alt="OnePay" />
+            <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/mpos-logo.png" alt="mPos" />
+          </div>
+        </div>
+        <div class="infoItems">
+          <h4>Thông tin và chính sách</h4>
+          <p>
+            Mua hàng và thanh toán Online<br />
+            Mua hàng trả góp Online<br />
+            Mua hàng trả góp bằng thẻ tín dụng<br />
+            Chính sách giao hàng<br />
+            Tra điểm Smember<br />
+            Xem ưu đãi Smember<br />
+            Tra thông tin bảo hành<br />
+            Tra cứu hoá đơn điện tử<br />
+            Thông tin hoá đơn mua hàng<br />
+            Trung tâm bảo hành chính hãng<br />
+          </p>
+        </div>
+        <div class="infoItems">
+          <h4>Dịch vụ và thông tin khách</h4>
+          <p>
+            Khách hàng doanh nghiệp (B2B)<br />
+            Ưu đãi thanh toán<br />
+            Quy chế hoạt động<br />
+            Chính sách bảo mật thông tin cá nhân<br />
+            Chính sách Bảo hành<br />
+            Liên hệ hợp tác kinh doanh<br />
+            Tuyển dụng<br />
+            Dịch vụ bảo hành mở rộng<br />
+            Smember: Tích điểm & sử dụng ưu đãi<br />
+          </p>
+        </div>
+        <div class="infoItems">
+          <h4>Kết nối với BKHT</h4>
+          <div>
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-youtube.png" alt="YouTube" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-facebook.png" alt="Facebook" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-instagram.png" alt="Instagram" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-tiktok.png" alt="TikTok" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-zalo.png" alt="Zalo" />
+          </div>
+          <p>
+            Trung tâm bảo hành uỷ quyền Apple<br />
+            Trung tâm bảo hành uỷ quyền Apple<br />
+            Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+            Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+          </p>
+        </div>
+        <div class="rong"></div>
+      </footer>
+    </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Người quản trị</title>
+    <link rel="stylesheet" href="../css/csadmin.css" />
+    <link rel="stylesheet" href="../css/topadmin.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/quanlysanpham.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="top-left">
+        <img src="../img/logo.png" class="logo" />
+      </div>
+      <div class="top-mid"></div>
+      <div class="top-right">
+        <a>
+          <img src="../img/home-smile-solid-240.png" class="home" />
+        </a>
+        <a>
+          <img src="../img/phone-call-solid-240.png" class="phone" />
+        </a>
+      </div>
+    </div>
+    <!-- topp -->
+    <!-- nội Dung-->
+    <div class="menu">
+      <h2>Menu</h2>
+      <a href="taikhoan.html">Tài khoản Admin</a>
+      <a href="quanlyuser.html">Quản lý người dùng</a>
+      <a href="themsanpham.html">Thêm sản phẩm</a>
+      <a href="quanlysanpham.html">Quản lý sản phẩm</a>
+      <a href="quanlydonhang.html">Quản lý đơn hàng</a>
+      <a href="thongke.html">Thống kê kinh doanh</a>
+    </div>
+
+    <!-- funcion -->
+    <!-- popup -->
+    <div class="all-sua hide">
+      <div class="in-sua">
+        <div class="sua-sanpham">
+          <div class="truoc">
+            <h2>Tên sản phẩm</h2>
+            <p>Iphone 6</p>
+          </div>
+          <div class="sau">
+            <div class="form-group">
+              <h2>Tên sản phẩm</h2>
+              <input type="text" id="motta" name="motta" />
+            </div>
+          </div>
+
+          <div class="truoc">
+            <h2>Giá bán</h2>
+            <p>6.500.000 VNĐ</p>
+          </div>
+          <div class="sau">
+            <div class="form-group">
+              <h2>Giá bán</h2>
+              <input type="text" id="motta" name="motta" />
+            </div>
+          </div>
+          <div class="truoc">
+            <h2>Mô tả</h2>
+            <p>
+              LED-backlit IPS LCD, 16 triệu màu, 4,7 inch (750x1334 pixels, 326
+              PPI), kính cường độ i-on (ion strength)
+            </p>
+          </div>
+          <div class="sau">
+            <div class="form-group">
+              <h2>mô tả</h2>
+              <input type="text" id="motta" name="motta" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group themhinhanh">
+          <h2>Thêm hình ảnh</h2>
+          <input type="file" id="add-image" name="add-image" />
+        </div>
+        <div class="sua-anh">
+          <div>
+            <div class="xoa-anh">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png"
+                class="anh-xoa"
+              />
+              <div class="xoa">x</div>
+            </div>
+          </div>
+          <div>
+            <div class="xoa-anh">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-2_1.png"
+                class="anh-xoa"
+              />
+              <div class="xoa">x</div>
+            </div>
+          </div>
+          <div>
+            <div class="xoa-anh">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-3_1.png"
+                class="anh-xoa"
+              />
+              <div class="xoa">x</div>
+            </div>
+          </div>
+          <div>
+            <div class="xoa-anh">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-4_1.png"
+                class="anh-xoa"
+              />
+              <div class="xoa">x</div>
+            </div>
+          </div>
+          <div>
+            <div class="xoa-anh">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-6_1.png"
+                class="anh-xoa"
+              />
+              <div class="xoa">x</div>
+            </div>
+          </div>
+          <div>
+            <div class="xoa-anh">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-10_1.png"
+                class="anh-xoa"
+              />
+              <div class="xoa">x</div>
+            </div>
+          </div>
+        </div>
+        <div class="button-sua-in">
+          <button type="submit" class="btn button-sua-trong sua">
+            Sửa sản phẩm
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- table -->
+    <div class="khung">
+      <div class="form-group">
+        <label for="tim"> <h2>Tìm sản phẩm</h2></label>
+        <input type="text" id="tim" name="tim" />
+        <table>
+          <thead>
+            <tr>
+              <th>Mặt hàng</th>
+              <th>Số lượng</th>
+              <th>Giá bán</th>
+              <th>Mô tả</th>
+              <th>Xem hóa đơn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max_1.png"
+                  alt="Diện thoại"
+                />
+                <span>iPhone 16 Pro Max </span>
+              </td>
+              <td>150</td>
+              <td>39,000,000 VNĐ</td>
+              <td>Hiện đại</td>
+              <td>
+                <button class="btn button-sua-ngoai sua">Sửa sản phẩm</button>
+                <button
+                  onclick="alert('Bạn có chắc xóa sản phẩm');"
+                  class="btn xoasanpham"
+                >
+                  Xóa sản phẩm
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-oppo-find-x8-xam-1.png"
+                  alt="Diện thoại"
+                />
+                <span>Oppo Find X8</span>
+              </td>
+              <td>50</td>
+              <td>22,000,000 VNĐ</td>
+              <td>Hiện đại</td>
+              <td>
+                <button class="btn button-sua-ngoai sua">Sửa sản phẩm</button>
+                <button
+                  onclick="alert('Bạn có chắc xóa sản phẩm');"
+                  class="btn xoasanpham"
+                >
+                  Xóa sản phẩm
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png"
+                  alt="Diện thoại"
+                />
+                <span>Samsung Galaxy S24</span>
+              </td>
+              <td>70</td>
+              <td>20,000,000 VNĐ</td>
+              <td>Hiện đại</td>
+              <td>
+                <button class="btn button-sua-ngoai sua">Sửa sản phẩm</button>
+                <button
+                  onclick="alert('Bạn có chắc xóa sản phẩm');"
+                  class="btn xoasanpham"
+                >
+                  Xóa sản phẩm
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-redmi-note-13-pro-4g_13__1.png"
+                  alt="Diện thoại"
+                />
+                <span>Xiaomi Realme 12</span>
+              </td>
+              <td>20</td>
+              <td>28,000,000 VNĐ</td>
+              <td>Hiện đại</td>
+              <td>
+                <button class="btn button-sua-ngoai sua">Sửa sản phẩm</button>
+                <button
+                  onclick="alert('Bạn có chắc xóa sản phẩm');"
+                  class="btn xoasanpham"
+                >
+                  Xóa sản phẩm
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_5__7_70.png"
+                  alt="Diện thoại"
+                />
+                <span>Oppo Reno 12</span>
+              </td>
+              <td>78</td>
+              <td>17,000,000 VNĐ</td>
+              <td>Hiện đại</td>
+              <td>
+                <button class="btn button-sua-ngoai sua">Sửa sản phẩm</button>
+                <button
+                  onclick="alert('Bạn có chắc xóa sản phẩm');"
+                  class="btn xoasanpham"
+                >
+                  Xóa sản phẩm
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- kết popup -->
+    </div>
+  </body>
+  <script src="../js/jsadmin.js"></script>
+</html>

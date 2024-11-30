@@ -1,0 +1,22 @@
+.avatar_admin{
+    width: 180px;
+    border-radius: 250px;
+    border-color: #297be0b1;
+}
+.page-admin{
+    display: grid;
+    grid-template-columns: 200px 400px;
+
+}
+.taikhoan{
+    display: grid;
+    grid-column: 1fr 1fr;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.theodoi{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 160px 1fr ;
+}

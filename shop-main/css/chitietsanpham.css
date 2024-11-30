@@ -1,0 +1,31 @@
+.chonLoai {
+    width: 25%;
+    margin: 15px;
+    text-align: center;
+    background-color: #297be0b1;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+.chonMau {
+    width: 55%;
+    margin: 10px;
+    text-align: center;
+    background-color: #297be0b1;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+.headerKhuyenmai {
+    background-color: #297be06c; padding: 10px;
+}
+.phimChot {
+    margin-top: 5px;
+    background-color: #297be0b1;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.phimChot:hover {
+    opacity: 0.8;
+}
+table tr:nth-child(even) {
+    background-color: #ccc;
+}
