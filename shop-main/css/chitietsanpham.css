@@ -18,7 +18,9 @@
     background-color: #297be06c; padding: 10px;
 }
 .phimChot {
-    margin-top: 5px;
+    height: 50px;
+    width: 50%;
+    margin-top: 10px;
     background-color: #297be0b1;
     color: whitesmoke;
     border-radius: 5px;
