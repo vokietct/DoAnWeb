@@ -401,6 +401,7 @@ header img {
   padding: 10px;
 }
 .phimChot {
+  height: 50px;
   margin-top: 5px;
   background-color: #297be0b1;
   color: whitesmoke;
