@@ -384,17 +384,26 @@ header img {
   width: 25%;
   margin: 15px;
   text-align: center;
-  background-color: #297be0b1;
-  border: 1px solid #888;
+  background-color: white;
+  border: 1px solid #5790d6d3;
   border-radius: 10px;
 }
 .chonMau {
   width: 55%;
   margin: 10px;
   text-align: center;
-  background-color: #297be0b1;
-  border: 1px solid #888;
+  background-color: white;
+  border: 1px solid #5790d6d3;
   border-radius: 10px;
+}
+.chonLoai:hover,
+.chonMau:hover {
+  background-color: #b1b1b137;
+  cursor: pointer;
+}
+
+.phimChot:hover {
+  cursor: pointer;
 }
 .headerKhuyenmai {
   background-color: #297be06c;
@@ -404,13 +413,13 @@ header img {
   height: 50px;
   font-size: 20px;
   margin-top: 5px;
-  background-color: #297be0b1;
-  color: whitesmoke;
+  background-color: #297be06c;
+  color: black;
   border-radius: 5px;
 }
 .phimChot:hover {
   opacity: 0.8;
 }
 table tr:nth-child(even) {
-  background-color: #ccc;
+  background-color: #cccccc60;
 }

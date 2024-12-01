@@ -1,0 +1,30 @@
+/*-------------------Phân Trang-------------------*/
+.phantrang_container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.phantrang_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #297be0b1;
+  width: 60px;
+  height: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.phantrang_items a {
+  text-decoration: none;
+  color: white;
+}
+
+.z {
+  background-color: #297be06c;
+}

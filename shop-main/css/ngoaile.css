@@ -225,6 +225,8 @@ header img {
 .thongtincon-1 a {
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 /* Tooltip khi di chuột vào #small */
@@ -478,6 +480,20 @@ header img {
   .thongtincon {
     width: 80px;
   }
+}
+#small i:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#giohang:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#nn:hover {
+  border: 1px solid white;
+  border-radius: 10px;
 }
 /*-------------------Đường dẫn -------------------*/
 

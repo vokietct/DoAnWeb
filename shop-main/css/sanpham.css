@@ -225,6 +225,8 @@ header img {
 .thongtincon-1 a {
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 /* Tooltip khi di chuột vào #small */
@@ -479,6 +481,16 @@ header img {
     width: 80px;
   }
 }
+
+#small i:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#giohang:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
 /*-------------------Đường dẫn -------------------*/
 
 .duongdan {
@@ -719,7 +731,6 @@ header img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -755,6 +766,16 @@ header img {
 .danhmucsanpham-gia h4 {
   margin: 0 10px 0 10px;
 }
+
+.danhmucsanpham-gia select {
+  width: 192.25px;
+  height: 25px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #297be0d3;
+  border-radius: 5px;
+}
+
 .danhmucsanpham-yeucau {
   width: 100%;
   display: flex;
@@ -770,23 +791,15 @@ header img {
   width: 100%;
 }
 
-.danhmucsanpham-yeucau_nd {
-  width: 92%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.danhmucsanpham-yeucau_nd label {
-  font-size: 17px;
-  width: 100px;
-}
 .danhmucsanpham-yeucau input {
-  width: 15px;
-  height: 15px;
+  width: 192.25px;
+  height: 16px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #297be0d3;
+  border-radius: 5px;
 }
 
-.danhmucsanpham-yeucau input[type="radio"],
 .danhmucsanpham-loai input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
@@ -800,7 +813,6 @@ header img {
   position: relative;
 }
 
-.danhmucsanpham-yeucau input[type="radio"]:checked::before,
 .danhmucsanpham-loai input[type="radio"]:checked::before {
   content: "";
   display: block;
@@ -879,7 +891,6 @@ header img {
     left: 100%;
   }
 }
-
 /*-------------------Phan chia -------------------*/
 .tong_sanpham_nangcao {
   width: 90%;
@@ -994,6 +1005,10 @@ header img {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.Tong_saveBtn .b:hover {
+  cursor: pointer;
 }
 .saveBtn {
   display: flex;

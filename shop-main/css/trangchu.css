@@ -95,6 +95,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 68px;
 }
 .thuonghieu2 {
   height: 70px;
@@ -223,6 +224,8 @@ header img {
 .thongtincon-1 a {
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 /* Tooltip khi di chuột vào #small */
@@ -477,6 +480,16 @@ header img {
   }
 }
 
+#small i:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#giohang:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
 /*3------------------------------------------------*/
 
 .Thanh {
@@ -509,6 +522,8 @@ header img {
   text-decoration: none;
   position: relative;
   flex-wrap: nowrap;
+  font-weight: bolder;
+  font-size: 18px;
 }
 .Thanh_con i {
   background-color: white;
@@ -1010,6 +1025,9 @@ header img {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+.Tong_saveBtn .b:hover {
+  cursor: pointer;
 }
 .saveBtn {
   display: flex;

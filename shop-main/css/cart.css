@@ -164,6 +164,8 @@ header img {
 .thongtincon-1 a {
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 /* Tooltip khi di chuột vào #small */
@@ -418,6 +420,16 @@ header img {
   }
 }
 
+#small i:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#giohang:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
 /* -----------------------&& [2] &&----------------------- */
 
 .cart-container {
@@ -475,6 +487,7 @@ hr {
 .cart-item-2 .left {
   display: flex;
   align-items: center;
+  margin-left: 5px;
 }
 
 .left i {
@@ -568,6 +581,42 @@ hr {
   background-color: rgba(128, 128, 128, 0.164);
   font-size: 20px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+}
+
+.cart-item-3-left .check {
+  width: 20px;
+  height: 20px;
+}
+
+.cart-item-3-right-bottom-sl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  border: 0.5px solid black;
+  border-radius: 3px;
+}
+
+.cart-item-3-right-bottom-sl input {
+  font-size: 16px;
+  width: 40%;
+  text-align: center;
+  border: none;
+  border-left: 0.5px solid rgb(151, 149, 149);
+  border-right: 0.5px solid rgb(151, 149, 149);
+  pointer-events: none;
+}
+
+.left,
+.right {
+  font-size: 16px;
+  margin: auto;
   cursor: pointer;
 }
 
@@ -665,8 +714,15 @@ hr {
 
 .cart-item-6-nd-1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-left: 20px;
+}
+
+.cart-item-6-nd-1 p {
+  margin: 2px 0;
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
 }
 
 #addressSelect {
@@ -840,4 +896,46 @@ hr {
     width: 35px;
     height: 35px;
   }
+}
+
+/* -----------------------&& [6] &&----------------------- */
+.ketqua {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ketqua i {
+  font-size: 100px;
+  color: #297be0b1;
+}
+
+.ketqua p {
+  font-size: 30px;
+  color: black;
+  font-weight: bolder;
+}
+
+.back {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.back a {
+  text-decoration: none;
+  color: white;
+  background-color: #297be0b1;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.back a:hover {
+  background-color: #2f87f2d4;
 }

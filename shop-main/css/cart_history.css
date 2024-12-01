@@ -165,6 +165,8 @@ header img {
 .thongtincon-1 a {
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 /* Tooltip khi di chuột vào #small */
@@ -418,6 +420,16 @@ header img {
   }
 }
 
+#small i:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#giohang:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
 /* -----------------------&& [2] &&----------------------- */
 .cart_history_container {
   display: flex;
@@ -440,6 +452,7 @@ header img {
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
+  background-color: white;
 }
 
 .cart_history_container_nd {
@@ -579,13 +592,7 @@ td {
   background-color: #297be0b1;
   border-radius: 3px;
 }
-.x a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  background-color: #297be0b1;
-  border-radius: 5px;
-}
+
 .nd-1_2 {
   display: flex;
   align-items: center;
@@ -619,6 +626,18 @@ td {
   justify-content: flex-end;
   padding: 5px 5px 0 0;
   color: #297be0b1;
+}
+
+.cart-history-nd-3 {
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 10px;
+  font-weight: bolder;
 }
 .kettien {
   display: flex;
@@ -694,4 +713,32 @@ td {
     gap: 5px;
     width: 82%;
   }
+}
+
+/* From Uiverse.io by PriyanshuGupta28 */
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: "\2605";
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: rgb(255, 242, 0);
+  transition: color 0.3s;
 }
