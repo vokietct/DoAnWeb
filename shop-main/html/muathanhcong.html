@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>BKHT Cart</title>
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <header id="top" class="dau">
+      <!--Thương hiệu-->
+      <div class="thuonghieu">
+        <a href="index.html">
+          <div class="th" style="height: 68px;">
+            <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+            <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+          </div>
+        </a>
+      </div>
+
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="ketquatimkiem.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query" 
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button> 
+        </form>
+      </div>
+
+      <!--Phần menu-->
+
+        <!-- Menu -->
+        <div class="menu">
+          <div class="thongtin">
+            <div class="thongtincon" id="small" onclick="toggleTooltip()">
+              <i class="bx bx-user-circle"></i>
+              <div class="tooltip">
+                <div class="tooltip-1">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScT_mFJcmtcWjfwLFCXxRcA9LcZsGlLV3enA&s" alt="anhdaidien">
+                  <h4>Xin chào , Steve!</h4>
+                </div>
+                <div class="tooltip-2">
+                  <h5>Thông báo</h5>
+                  <hr>
+                  <div class="tooltip-2-nd-thongbao">
+                    <p>Trống</p>
+                  </div>
+                </div>
+                <div class="tooltip-4">
+                  <a href="cart_history.html">Lịch sử giỏ hàng</a>
+                </div>
+                <div class="tooltip-3">
+                  <a href="index.html">Đăng xuất</a>
+                </div>
+              </div>
+            </div>
+            <div class="overlay" onclick="hideTooltip()"></div>
+            <div class="thongtincon-1">
+              <i class="bx bx-phone"></i>
+              <div class="dathang">
+                <a href="#">Đặt hàng</a>
+                <a href="#">1800.1915</a>
+              </div>
+            </div>
+            <div class="thongtincon-1">
+              <i class="bx bx-map"></i>
+              <a href="#1">TP.HCM</a>
+            </div>
+            <div class="thongtincon" id="giohang">
+              <i class="bx bx-cart-download"></i>
+              <a href="cart.html">Giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="ketqua">
+        <i class='bx bx-check-circle'></i>
+        <p>Bạn đã đặt hàng thành công !</p>   
+        <div class="back">
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="cart_history.html">Xem lịch sử giỏ hàng</a>
+        </div>
+    </div>
+
+    <script src="../js/d.js"></script>
+  </body>
+</html>

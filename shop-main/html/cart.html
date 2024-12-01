@@ -14,15 +14,17 @@
     <header id="top" class="dau">
       <!--Thương hiệu-->
       <div class="thuonghieu">
-        <div class="th">
-          <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
-          <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
-        </div>
+        <a href="index.html">
+          <div class="th" style="height: 68px;">
+            <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+            <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+          </div>
+        </a>
       </div>
 
       <!--Phần search-->
       <div class="InputContainer">
-        <form action="sanpham.html" method="GET" class="search-form">
+        <form action="ketquatimkiem.html" method="GET" class="search-form">
           <input
             placeholder="Search"
             id="input"
@@ -99,7 +101,7 @@
 
       <div class="cart-item-2">
         <div class="left">
-          <i class="bx bx-square-rounded" id="icon1"></i>
+          <input type="checkbox" class="check">
           <span>Chọn tất cả</span>
         </div>
         <div class="right">
@@ -109,7 +111,7 @@
 
       <div class="cart-item-3">
         <div class="cart-item-3-left">
-          <i class="bx bx-square-rounded"></i>
+          <input type="checkbox" class="check">
           <div class="cart-item-3-left-img">
             <img
               src="https://cdn2.cellphones.com.vn/insecure/rs:fill:350:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/m/image_1172.png"
@@ -126,9 +128,9 @@
           <div class="cart-item-3-right-bottom">
             <p>41.990.000đ</p>
             <div class="cart-item-3-right-bottom-sl">
-              <i class="bx bx-minus"></i>
-              <span>1</span>
-              <i class="bx bx-plus"></i>
+                  <div class="left">-</div>
+                  <input type="text" value="1">
+                  <div class="right">+</div>
             </div>
           </div>
         </div>
@@ -175,7 +177,7 @@
 
       <div class="cart-item-3">
         <div class="cart-item-3-left">
-          <i class="bx bx-square-rounded"></i>
+          <input type="checkbox" class="check">
           <div class="cart-item-3-left-img">
             <img
               src="https://cdn2.cellphones.com.vn/insecure/rs:fill:350:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-den.png"
@@ -192,10 +194,10 @@
           <div class="cart-item-3-right-bottom">
             <p>34.790.000đ</p>
             <div class="cart-item-3-right-bottom-sl">
-              <i class="bx bx-minus"></i>
-              <span>2</span>
-              <i class="bx bx-plus"></i>
-            </div>
+              <div class="left">-</div>
+              <input type="text" value="2">
+              <div class="right">+</div>
+        </div>
           </div>
         </div>
       </div>
@@ -245,14 +247,8 @@
           <h4>Địa chỉ giao hàng</h4>
         </div>
         <div class="cart-item-6-nd-1">
-          <input type="radio" id="existingAddress" name="address" checked />
-          <label for="existingAddress">Chọn địa chỉ từ tài khoản</label>
-          <select id="addressSelect">
-            <option value="address1">Thành Phố Hồ Chí Minh</option>
-            <option value="address2">Thủ đô Hà Nội</option>
-            <option value="address3">Thủ đô Thủ Đức</option>
-            <option value="address4">Thủ đô Đà Nẵng</option>
-          </select>
+          <p>Người nhận: Steve | SĐT: (+84)333 333 333</p>
+          <p>Địa chỉ : 56 Nguyễn Trãi , Tp Hồ Chí Minh</p>
         </div>
         <br />
         <div class="cart-item-6-nd-2">
@@ -276,18 +272,18 @@
           <h4>Phương thức thanh toán</h4>
         </div>
         <div class="cart-item-6-nd-2">
-          <input type="radio" id="newAddress" name="address" />
-          <label for="newAddress">Thanh toán tiền mặt</label>
+          <input type="radio" id="new" name="tt" />
+          <label for="new">Thanh toán tiền mặt</label>
         </div>
         <br />
         <div class="cart-item-6-nd-2">
-          <input type="radio" id="newAddress" name="address" />
-          <label for="newAddress">Chuyển khoản</label>
+          <input type="radio" id="new" name="tt" />
+          <label for="new">Chuyển khoản</label>
         </div>
         <br />
         <div class="cart-item-6-nd-2">
-          <input type="radio" id="newAddress" name="address" />
-          <label for="newAddress"
+          <input type="radio" id="new" name="tt" />
+          <label for="new"
             >Thanh toán qua thẻ-(Hãy điền thông tin)</label
           >
         </div>
@@ -311,7 +307,7 @@
         <div class="cart-item-8-tomtat">
           <p>Sản phẩm 1: 41.990.000đ</p>
           <p>Sản phẩm 2: 37.790.000đ</p>
-          <p>Tổng cộng: 76.780.000đ</p>
+          <p>Tổng thanh toán: 76.780.000đ</p>
         </div>
       </div>
 
@@ -327,7 +323,7 @@
         </div>
         <div class="muangay-right">
           <div class="button">
-            <a href="">Mua Ngay</a>
+            <a href="muathanhcong.html">Mua Ngay</a>
           </div>
         </div>
       </div>

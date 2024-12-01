@@ -4,111 +4,127 @@
         <title>Chi tiết sản phẩm</title>
         <link rel="stylesheet" href="../css/trangchu.css" />
         <link rel="stylesheet" href="../css/chitietsanpham.css" />
+        <link rel="stylesheet" href="../css/sanpham.css">
         <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     </head>
-    <body>
-        <header id="top" class="dau">
-            <!--Thương hiệu-->
-            <div class="thuonghieu">
-              <div class="th">
-                <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
-                <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+    <body style="background-color: white;">
+      <header id="top" class="dau">
+        <!--Thương hiệu-->
+        <div class="thuonghieu">
+          <a href="trangchu.html">
+            <div class="th" style="height: 68px;">
+              <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+              <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+            </div>
+          </a>
+        </div>
+  
+        <!--Phần search-->
+        <div class="InputContainer">
+          <form action="ketquatimkiem.html" method="GET" class="search-form">
+            <input
+              placeholder="Search"
+              id="input"
+              class="input"
+              name="query" 
+              type="text"
+            />
+            <!-- Button đóng vai trò là icon tìm kiếm -->
+            <button type="submit" class="labelforsearch">
+              <div class="searchIcon">
+                <i class="bx bx-search"></i>
               </div>
-            </div>
-      
-            <!--Phần search-->
-            <div class="InputContainer">
-              <form action="sanpham.html" method="GET" class="search-form">
-                <input
-                  placeholder="Search"
-                  id="input"
-                  class="input"
-                  name="query" 
-                  type="text"
-                />
-                <!-- Button đóng vai trò là icon tìm kiếm -->
-                <button type="submit" class="labelforsearch">
-                  <div class="searchIcon">
-                    <i class="bx bx-search"></i>
+            </button> 
+          </form>
+        </div>
+  
+        <!--Phần menu-->
+  
+          <!-- Menu -->
+          <div class="menu">
+            <div class="thongtin">
+              <div class="thongtincon" id="small" onclick="toggleTooltip()">
+                <i class="bx bx-user-circle"></i>
+                <div class="tooltip">
+                  <div class="tooltip-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScT_mFJcmtcWjfwLFCXxRcA9LcZsGlLV3enA&s" alt="anhdaidien">
+                    <h4>Xin chào , Steve!</h4>
                   </div>
-                </button> 
-              </form>
-            </div>
-      
-            <!--Phần menu-->
-      
-              <!-- Menu -->
-              <div class="menu">
-                <div class="thongtin">
-                  <div class="thongtincon" id="small">
-                    <i class="bx bx-user-circle"></i>
-                    <div class="tooltip">
-                      <div class="tooltip-1">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScT_mFJcmtcWjfwLFCXxRcA9LcZsGlLV3enA&s" alt="anhdaidien">
-                          <h4>Xin chào , Steve!</h4>
-                      </div>
-                      <div class="tooltip-2">
-                          <h5>Thông báo</h5>
-                          <hr>
-                          <div class="tooltip-2-nd-thongbao">
-                              <p>Trống</p>
-                          </div>
-                      </div>
-                      <div class="tooltip-4">
-                        <a href="cart_history.html">Lịch sử giỏ hàng</a>
-                      </div>
-                      <div class="tooltip-3">
-                          <a href="index.html">Đăng xuất</a>
-                      </div>
+                  <div class="tooltip-2">
+                    <h5>Thông báo</h5>
+                    <hr>
+                    <div class="tooltip-2-nd-thongbao">
+                      <p>Trống</p>
                     </div>
                   </div>
-                  <div class="thongtincon-1">
-                    <i class="bx bx-phone"></i>
-                    <div class="dathang">
-                      <a>Đặt hàng</a>
-                      <a>1800.1915</a>
-                    </div>
+                  <div class="tooltip-4">
+                    <a href="cart_history.html">Lịch sử giỏ hàng</a>
                   </div>
-                  <div class="thongtincon-1">
-                    <i class="bx bx-map"></i>
-                    <a>TP.HCM</a>
-                  </div>
-                  <div class="thongtincon">
-                    <i class="bx bx-cart-download"></i>
-                    <a href="cart.html">Giỏ hàng</a>
+                  <div class="tooltip-3">
+                    <a href="index.html">Đăng xuất</a>
                   </div>
                 </div>
               </div>
+              <div class="overlay" onclick="hideTooltip()"></div>
+              <div class="thongtincon-1">
+                <i class="bx bx-phone"></i>
+                <div class="dathang">
+                  <a href="#">Đặt hàng</a>
+                  <a href="#">1800.1915</a>
+                </div>
+              </div>
+              <div class="thongtincon-1">
+                <i class="bx bx-map"></i>
+                <a href="#1">TP.HCM</a>
+              </div>
+              <div class="thongtincon" id="giohang">
+                <i class="bx bx-cart-download"></i>
+                <a href="cart.html">Giỏ hàng</a>
+              </div>
             </div>
-          </header>
+          </div>
+        </div>
+      </header>
+
+      <!-- Đường dẫn -->
+    <div class="duongdan">
+      <div class="nd_duongdan">
+        <i class="bx bx-home" style="color: #297be0b1"></i>
+        <a href="trangchu.html">Trang chủ</a>
+        <i class="bx bxs-chevrons-right" style="margin-right: 5px"></i>
+        <p>Chi tiết Điện thoại</p>
+      </div>
+    </div>
+
         <div style="display: flex; width: 80%; margin: auto;">
             <!-- hình sản phẩm -->
-            <div style="width: 60%;">
-                <h1>SamSung Galaxy S23</h1>
-                <img src="../img/tải xuống (1).jpg" width="50%" style="margin-left: 20%;"/>
+            <div style="width: 51%;">
+                <h2>iPhone 13 Pro Max 128GB | Chính hãng VN/A</h2>
+                <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max.png" width="50%" style="margin-left: 20%;"/>
             </div>
             <!-- thông tin sản phẩm -->
             <div style="width: 40%;">
+                
                 <div style="display: flex;">
-                    <div class="chonLoai">8G 124G <br/> 12.000.000</div>
+                  <h3 style="margin: 2px;width: 158px;">Dung lượng:</h3>
+                  <div class="chonLoai">8G 124G <br/> 12.000.000</div>
                     <div class="chonLoai">16G 256G <br/> 18.290.000</div>
                     <div class="chonLoai">16G 512G <br/> 18.990.000</div>
-                </div>
+              </div>
                 <div style="display: flex;">
-                    <h3 style="margin: 2px;">Chọn màu</h3>
-                    <div class="chonMau"><img src="../img/tải xuống (1).jpg" width="25px"> Xanh</div>
+                    <h3 style="margin: 2px;">Màu:</h3>
+                    <div class="chonMau"><img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max-8_1.jpg" width="25px"> Xanh</div>
                     <div class="chonMau"><img src="../img/tải xuống (4).jpg" width="25px"> Đen</div>
                     <div class="chonMau"><img src="../img/tải xuống (9).jpg" width="25px"> Tím</div>
                     <div class="chonMau"><img src="../img/tải xuống (7).jpg" width="25px"> Trắng</div>
                 </div>
                 <!-- các chức năng thanh toán -->
                 <div style="display: flex;">
-                    <button style="width: 45%;" class="phimChot"><a href="./index.html" style="text-decoration: none; color: white;">Về trang chủ</a></button>
-                    <button style="width: 45%;" class="phimChot">Mua ngay</button>
-                    <button style="width: 10%;" class="phimChot">
+                    <button style="width: 45%;margin-right: 5px; " class="phimChot"><a href="muathanhcong.html" style="text-decoration: none;color: black;">Mua ngay</a></button>
+                    <button style="width: 10%;" class="phimChot" onclick="alert('Đã thêm vào giỏ hàng')">
                       <i class='bx bx-cart-add' ></i>
                     </button>
                 </div>
@@ -157,9 +173,9 @@
             
             
         </div>
-        <div style="display: flex; margin: auto; width: 80%;">
-          <div style="border: 1px solid #888; border-radius: 5px; width: 50%; margin: 10px; padding: 5px; background-color: #297be06c;">
-              <h3 style="text-decoration: underline;">Thông tin sản phẩm</h3>
+        <div style="display: flex; margin: auto; width: 80%;height: 280px;;">
+          <div style="border: 1px solid #888; border-radius: 5px; width: 50%; background-color: #297be06c;padding: 10px;">
+              <h3 style="text-decoration: none;">Thông tin sản phẩm</h3>
               <p>Mới, đầy đủ phụ kiện từ nhà sản xuất<br>
                   Hộp, Sách hướng dẫn, Cây lấy sim, Cáp Type C<br>
                   Bảo hành 12 tháng tại trung tâm bảo hành Chính hãng. 1 đổi 1 trong 30 ngày nếu có lỗi phần cứng từ nhà sản xuất. (xem chi tiết)<br>
@@ -174,7 +190,7 @@
               <select style="width: 150px; height: 50px; font-size: 18px;">
                   <option value="no">Quận/Huyện</option>
               </select>
-              <div style="border: 2px solid #999; border-radius: 10px; overflow: hidden;">
+              <div style="border: 2px solid #999; border-radius: 10px; overflow: hidden;margin-top: 12px;">
                   <div class="headerKhuyenmai">Các cửa hàng có sẵn</div>
                   <div>
                       <p>02871000218
@@ -203,7 +219,7 @@
           </form>
       </div>
         <!-- Phần footer -->
-    <footer>
+    <footer style="margin-top: 10px;">
         <div class="infoItems">
           <h4>Tổng đài hỗ trợ miễn phí</h4>
           <p>
@@ -266,5 +282,8 @@
         </div>
         <div class="rong"></div>
       </footer>
+
+      <script src="../js/d.js"></script>
+
     </body>
 </html>

@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Phone Store [T]</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/sanpham.css" />
+    <link rel="stylesheet" href="../css/phantrang.css">
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" style="background-color: black">
+          <a href="https://www.thegioididong.com/" target="_blank">
+            <img
+              src="https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fbanners%2F2024%2F8%2F30%2F1%2F1727685880678_header_780_x_100.jpg&w=384&q=75"
+              alt="Anh1"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: #e9efff">
+          <a href="https://cellphones.com.vn/" target="_blank">
+            <img
+              src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Giao%20hang.svg"
+              alt="Anh2"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: #e9efff">
+          <a href="#" target="_blank">
+            <img
+              src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Thu%20cu.svg"
+              alt="Anh3"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: #e9efff">
+          <a href="#" target="_blank">
+            <img
+              src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Chinh%20hang.svg"
+              alt="Anh4"
+            />
+          </a>
+        </div>
+        <div class="slide" style="background-color: rgba(255, 166, 0, 0.899)">
+          <a href="https://didongviet.vn/" target="_blank">
+            <img
+              src="https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fbanners%2F2024%2F9%2F8%2F1%2F1728389479729_header_03.png&w=1920&q=75"
+              alt="Anh5"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <header id="top" class="dau">
+      <!--Thương hiệu-->
+      <div class="thuonghieu">
+        <a href="index.html">
+          <div class="th" style="height: 68px;">
+            <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+            <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+          </div>
+        </a>
+      </div>
+
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="ketquatimkiem.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query"
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button>
+        </form>
+      </div>
+
+      <div class="menu">
+        <div class="thongtin">
+          <div class="thongtincon" id="small" onclick="toggleTooltip()">
+            <i class="bx bx-user-circle"></i>
+            <div class="tooltip">
+              <div class="tooltip-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScT_mFJcmtcWjfwLFCXxRcA9LcZsGlLV3enA&s" alt="anhdaidien">
+                <h4>Xin chào , Steve!</h4>
+              </div>
+              <div class="tooltip-2">
+                <h5>Thông báo</h5>
+                <hr>
+                <div class="tooltip-2-nd-thongbao">
+                  <p>Trống</p>
+                </div>
+              </div>
+              <div class="tooltip-4">
+                <a href="cart_history.html">Lịch sử giỏ hàng</a>
+              </div>
+              <div class="tooltip-3">
+                <a href="index.html">Đăng xuất</a>
+              </div>
+            </div>
+          </div>
+          <div class="overlay" onclick="hideTooltip()"></div>
+          <div class="thongtincon-1">
+            <i class="bx bx-phone"></i>
+            <div class="dathang">
+              <a href="#">Đặt hàng</a>
+              <a href="#">1800.1915</a>
+            </div>
+          </div>
+          <div class="thongtincon-1">
+            <i class="bx bx-map"></i>
+            <a href="#1">TP.HCM</a>
+          </div>
+          <div class="thongtincon" id="giohang">
+            <i class="bx bx-cart-download"></i>
+            <a href="cart.html">Giỏ hàng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <!-- Đường dẫn -->
+    <div class="duongdan">
+      <div class="nd_duongdan">
+        <i class="bx bx-home" style="color: #297be0b1"></i>
+        <a href="trangchu.html">Trang chủ</a>
+        <i class="bx bxs-chevrons-right" style="margin-right: 5px"></i>
+        <p>Điện thoại</p>
+      </div>
+    </div>
+
+    <!-- Slide-Show quảng cáo -->
+    <div class="slide-tong">
+      <div class="slide-show" id="slider1">
+        <div class="list-images">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/iphone-16-thuong-mua-ngay.jpg" alt="Anh1">
+          <img style="height: 100px;" src="https://clickbuy.com.vn/uploads/media/657-hhppS.jpg" alt="Anh2">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/xiaomi-14T-series-cate-mo-ban.jpg" alt="Anh3">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/real-me-note-60-cate-6-9-2024.png" alt="Anh4">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/dien-thoai-xiaomi-redmi-14c-cate-30-8.jpg" alt="Anh5">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/cate-mo-ban-ip-16-pro-26-09.jpg" alt="Anh6">
+        </div>
+        <div class="btns">
+          <div class="btn-left btn"><i class='bx bx-chevron-left'></i></div>
+          <div class="btn-right btn"><i class='bx bx-chevron-right' ></i></div>
+        </div>
+        <div class="index-images">
+          <div class="index-item index-item-0 active"></div>
+          <div class="index-item index-item-1"></div>
+          <div class="index-item index-item-2"></div>
+          <div class="index-item index-item-3"></div>
+          <div class="index-item index-item-4"></div>
+          <div class="index-item index-item-5"></div>
+        </div>
+      </div>
+      <div class="slide-show" id="slider2">
+        <div class="list-images">
+          <img style="height: 100px;" src="https://clickbuy.com.vn/uploads/media/657-hhppS.jpg" alt="Anh2">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/xiaomi-14T-series-cate-mo-ban.jpg" alt="Anh3">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/real-me-note-60-cate-6-9-2024.png" alt="Anh4">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/dien-thoai-xiaomi-redmi-14c-cate-30-8.jpg" alt="Anh5">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/cate-mo-ban-ip-16-pro-26-09.jpg" alt="Anh6">
+          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/iphone-16-thuong-mua-ngay.jpg" alt="Anh1">
+
+        </div>
+        <div class="btns">
+          <div class="btn-left btn"><i class='bx bx-chevron-left'></i></div>
+          <div class="btn-right btn"><i class='bx bx-chevron-right' ></i></div>
+        </div>
+        <div class="index-images">
+          <div class="index-item index-item-0 active"></div>
+          <div class="index-item index-item-1"></div>
+          <div class="index-item index-item-2"></div>
+          <div class="index-item index-item-3"></div>
+          <div class="index-item index-item-4"></div>
+          <div class="index-item index-item-5"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Phân loại điện thoại -->
+    <div class="loai">
+      <div class="loai_nd">
+        <a href="sanphamApple.html">
+          <img
+            class="loai_anh"
+            src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_59.png"
+            alt="Apple"
+          />
+        </a>
+        <a href="sanphamSamsung.html">
+          <img
+            class="loai_anh"
+            src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_60.png"
+            alt="Samsung"
+          />
+        </a>
+        <a href="sanphamXiaomi.html">
+          <img
+            class="loai_anh"
+            src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_61.png"
+            alt="Xiaomi"
+          />
+        </a>
+        <a href="sanphamOppo.html">
+          <img
+            class="loai_anh"
+            src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_62.png"
+            alt="OPPO"
+          />
+        </a>
+        <a href="sanphamRealme.html">
+          <img
+            class="loai_anh"
+            src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_63.png"
+            alt="realme"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="tong_sanpham_nangcao">
+        <!-- Tìm kiếm nâng cao -->
+        <div class="danhmucsanpham-container">
+          <div class="danhmucsanpham-items">
+            <div class="danhmucsanpham-tieude">
+              <div class="danhmucsanpham-tieude-items">
+                <i style="font-size: 20px;margin-right: 5px;" class='bx bx-food-menu'></i>
+                <h3 style="margin: 5px 0;">Danh mục sản phẩm</h3>
+              </div>
+            </div>
+            <div class="danhmucsanpham-yeucau">
+              <h4>Tên sản phẩm</h4>
+              <input type="text" id="name" >
+            </div>
+            <div class="danhmucsanpham-loai">
+              <h4>Loại sản phẩm:</h4>
+              <div class="danhmucsanpham-loai_nd">
+                <div class="danhmucsanpham-loai_items type" style="margin-left: 9px;">
+                  <input type="radio" id="iphone" name="fav_languag" value="iphone">
+                  <label for="iphone">iPhone</label>
+                </div>
+                <div class="danhmucsanpham-loai_items type" style="margin-left: 9px;">
+                  <input type="radio" id="samsung" name="fav_languag" value="samsung">
+                  <label for="samsung">Samsung</label>
+                </div>
+                <div class="danhmucsanpham-loai_items type">
+                  <input type="radio" id="xiaomi" name="fav_languag" value="xiaomi">
+                  <label for="xiaomi">Xiaomi</label>
+                </div>
+                <div class="danhmucsanpham-loai_items type" style="margin-left: 9px;">
+                  <input type="radio" id="oppo" name="fav_languag" value="oppo">
+                  <label for="oppo">Oppo</label>
+                </div>
+                <div class="danhmucsanpham-loai_items type" style="margin-left: 9px;">
+                  <input type="radio" id="realme" name="fav_languag" value="realme">
+                  <label for="realme">realme</label> 
+                </div>
+              </div>
+            </div>
+            <div class="danhmucsanpham-gia">
+              <h4>Giá: </h4>
+              <select id="browsers" name="browsers">
+                <option value="Trống"></option>
+                <option value="Dưới 500.000đ">Dưới 500.000đ</option>
+                <option value="500.000đ - 3.000.000đ">500.000đ - 3.000.000đ</option>
+                <option value="3.000.000đ - 10.000.000đ">3.000.000đ - 10.000.000đ</option>
+                <option value="10.000.000đ - 20.000.000đ">10.000.000đ - 20.000.000đ</option>
+                <option value="20.000.000đ Trở lên">20.000.000đ Trở lên</option>
+              </select>
+            </div>
+            <div class="danhmucsanpham-tim" >
+              <button class="button">Tìm kiếm</button>
+            </div>
+          </div>
+        </div>
+    
+
+    <!-- Phần sản phẩm ở trang chủ -->
+    <div class="tong_sanpham">
+      <!-- sản phẩm nổi bật -->
+      <div class="hotSale">
+        <div class="title_hotSale">
+          <div style="display: flex">
+            <i class="bx bxs-hot" style="align-content: center"></i>
+            <h2>HOT SALE CUỐI TUẦN</h2>
+          </div>
+        </div>
+  
+        <div class="hotSaleItemsContainer">
+          <!-- các sản phẩm hot đặt tại đây -->
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>IPhone 16 ProMax | Chính hãng VN/A</h4>
+            <!--ten-->
+            <h3>Giá: 34.900.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                  href="chitietsanpham.html"
+                  target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+  
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-z-lip5_1__1.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>Samsung Galaxy Z Flip 5</h4>
+            <!--ten-->
+            <h3>Giá: 15.900.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                href="chitietsanpham.html"
+                target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+  
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-realme-c61_2_.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>realme C61 </h4>
+            <!--ten-->
+            <h3>Giá: 3.900.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                href="chitietsanpham.html"
+                target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+  
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13_2_.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>IPhone 13 | Chính hãng VN/A</h4>
+            <!--ten-->
+            <h3>Giá: 13.790.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                href="chitietsanpham.html"
+                target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-6-xanh_5_.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>Samsung Galaxy Z Fold6 | Chính hãng VN/A</h4>
+            <!--ten-->
+            <h3>Giá: 34.900.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                href="chitietsanpham.html"
+                target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi_14t_pro_1_.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>Xiaomi 14T Pro | Chính hãng VN/A</h4>
+            <!--ten-->
+            <h3>Giá: 17.990.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                href="chitietsanpham.html"
+                target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/_/t_i_xu_ng_22__6.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>Xiaomi Poco X6 Pro</h4>
+            <!--ten-->
+            <h3>Giá: 8.490.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                href="chitietsanpham.html"
+                target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+  
+          <div class="hotSaleItems">
+            <img
+              src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-a18-den.png"
+              alt="Sanpham"
+            /><!--hinh-->
+            <h4>OPPO A18 4GB</h4>
+            <!--ten-->
+            <h3>Giá: 3.790.000đ</h3>
+            <!--gia-->
+            <div class="Tong_saveBtn">
+              <button class="saveBtn a">
+                <a
+                href="chitietsanpham.html"
+                target="_blank"
+                  >Xem chi tiết</a
+                >
+              </button>
+              <button class="saveBtn b">
+                <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sản phẩm chính điện thoại -->
+      <div class="products">
+        <div class="title_product">
+          <h2>ĐIỆN THOẠI</h2>
+        </div>
+  
+        <hr />
+  
+        <div class="nd_product">
+          <div class="title_con">
+            <h2>iPhone</h2>
+          </div>
+  
+          <div class="hotSaleItemsContainer">
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-1.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 16 | Chính hãng VN/A</h4>
+              <h3>Giá: 22.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+  
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13_2_.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 13 | Chính hãng VN/A</h4>
+              <h3>Giá: 13.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+  
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-11.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 11 | Chính hãng VN/A</h4>
+              <h3>Giá: 8.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+  
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 15 ProMax | Chính hãng VN/A</h4>
+              <h3>Giá: 24.390.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+  
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-12.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 12 | Chính hãng VN/A</h4>
+              <h3>Giá: 10.790.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+  
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14_1.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 14 | Chính hãng VN/A</h4>
+              <h3>Giá: 17.090.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-plus_1_.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 14 Plus | Chính hãng VN/A</h4>
+              <h3>Giá: 18.980.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png"
+                alt="Sanpham"
+              />
+              <h4>IPhone 16 ProMax | Chính hãng VN/A</h4>
+              <h3>Giá: 34.900.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="nd_product">
+          <div class="title_con" >
+            <h2>SAMSUNG</h2>
+          </div>
+  
+          <div class="hotSaleItemsContainer">
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-xam-222.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy S24 Ultra</h4>
+              <h3>Giá: 29.990.000</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-z-lip5_1__1.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy Z Flip 5 </h4>
+              <h3>Giá: 15.990.000</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy M55 </h4>
+              <h3>Giá: 10.990.000</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-6-xanh_5_.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy Z Fold6</h4>
+              <h3>Giá: 41.900.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-a15-xanh-01.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy AJ</h4>
+              <h3>Giá: 4.990.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-s23_1.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy S23</h4>
+              <h3>Giá: 13.900.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-flip-6-xanh-duong-6_2.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy Z Flip6</h4>
+              <h3>Giá: 24.990.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-a556_galaxy_a55_awesome_lilac_ui.png"
+                alt="Sanpham"
+              />
+              <h4>Samsung Galaxy A55</h4>
+              <h3>Giá: 9.690.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="nd_product">
+          <div class="title_con">
+            <h2>Xiaomi</h2>
+          </div>
+  
+          <div class="hotSaleItemsContainer">
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi_14t_2_.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi 14T Pro</h4>
+              <h3>Giá: 12.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/_/t_i_xu_ng_22__6.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi Poco X6</h4>
+              <h3>Giá: 8.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi_redmi_14c_5_.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi 14C</h4>
+              <h3>Giá: 3.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-redmi-note-13_1__1_1.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi Redmi Note 13</h4>
+              <h3>Giá: 4.390.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/o/poco-m6_1_.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi Poco M6 128GB</h4>
+              <h3>Giá: 2.790.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14-pre-xanh-la.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi 14</h4>
+              <h3>Giá: 20.090.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-mi-11-lite-5g-2_10.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi 11 Lite 5G</h4>
+              <h3>Giá: 10.980.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-mi-12t.png"
+                alt="Sanpham"
+              />
+              <h4>Xiaomi 12T 8GB</h4>
+              <h3>Giá: 34.900.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="nd_product">
+          <div class="title_con" >
+            <h2>OPPO</h2>
+          </div>
+  
+          <div class="hotSaleItemsContainer">
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_7__2_102.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO A3</h4>
+              <h3>Giá: 4.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/f/i/find_n3_-_combo_product_-_gold.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO Find N3</h4>
+              <h3>Giá: 41.990.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/f/i/find-n3-flip-vang_1.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO Find N3 Flip</h4>
+              <h3>Giá: 22.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_4__6_73.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO Reno12 F 5GB</h4>
+              <h3>Giá: 9.390.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_5__7_70.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO Reno 12</h4>
+              <h3>Giá: 12.790.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-a79-tim.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO A79 5GB</h4>
+              <h3>Giá: 6.090.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/o/download_1__6_6.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO Find X5 Pro</h4>
+              <h3>Giá: 15.980.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-reno10-pro-plus-tim.png"
+                alt="Sanpham"
+              />
+              <h4>OPPO Reno10 Pro+</h4>
+              <h3>Giá: 13.900.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="nd_product">
+          <div class="title_con" >
+            <h2>realme</h2>
+          </div>
+  
+          <div class="hotSaleItemsContainer">
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/realme-c67-1_1.png"
+                alt="Sanpham"
+              />
+              <h4>realme C67</h4>
+              <h3>Giá: 4.490.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-realme-c60_4__1.png"
+                alt="Sanpham"
+              />
+              <h4>realme C60</h4>
+              <h3>Giá: 2.400.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/realme-c30s-den-glr--009_3_3.jpg"
+                alt="Sanpham"
+              />
+              <h4>realme C30s</h4>
+              <h3>Giá: 1.890.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/realme-c51_2_1.png"
+                alt="Sanpham"
+              />
+              <h4>realme C60</h4>
+              <h3>Giá: 2.390.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/realme-c53-vang-1.png"
+                alt="Sanpham"
+              />
+              <h4>realme C53</h4>
+              <h3>Giá: 3.790.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-realme-note-60-4gb-64gb_1.png"
+                alt="Sanpham"
+              />
+              <h4>realme Note 60</h4>
+              <h3>Giá: 2.090.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-realme-c61_2_.png"
+                alt="Sanpham"
+              />
+              <h4>realme C61</h4>
+              <h3>Giá: 3.980.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+  
+            <div class="hotSaleItems">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/g/rgrgrtyt6.jpg"
+                alt="Sanpham"
+              />
+              <h4>realme C55</h4>
+              <h3>Giá: 3.900.000đ</h3>
+              <div class="Tong_saveBtn">
+                <button class="saveBtn a">
+                  <a
+                  href="chitietsanpham.html"
+                    target="_blank"
+                    >Xem chi tiết</a
+                  >
+                </button>
+                <button class="saveBtn b">
+                  <a  onclick="alert('Đã thêm vào giỏ hàng')"><i class='bx bx-cart-add' ></i></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      </div>
+  
+      </div>  
+
+    <!-- Phần nút quay lại đầu trang -->
+    <a href="#top" class="scroll-to-top"><i class='bx bxs-upvote'></i></a>
+
+    <!-- Phân trang -->
+    <div class="phantrang_container">
+      <div class="phantrang_items z">
+        <a href="sanpham.html">1</a>
+      </div>
+      <div class="phantrang_items ">
+        <a href="sanpham2.html">2</a>
+      </div>
+      <div class="phantrang_items z">
+        <a href="index.html"><i class='bx bx-chevrons-right'></i></a>
+      </div>
+    </div>
+
+
+    <!-- Phần footer -->
+    <footer>
+      <div class="infoItems">
+        <h4>Tổng đài hỗ trợ miễn phí</h4>
+        <p>
+          Gọi mua hàng 1800.2097 (7h30 - 22h00)<br />
+          Gọi khiếu nại 1800.2063 (8h00 - 21h30)<br />
+          Gọi bảo hành 1800.2064 (8h00 - 21h00)<br />
+        </p>
+        <h4>Phương thức thanh toán</h4>
+        <div style="display: flex; flex-wrap: wrap;">
+          <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/vnpay-logo.png" alt="VNPay" />
+          <img src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/momo_1.png" alt="momo" />
+          <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/onepay-logo.png" alt="OnePay" />
+          <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/mpos-logo.png" alt="mPos" />
+        </div>
+      </div>
+      <div class="infoItems">
+        <h4>Thông tin và chính sách</h4>
+        <p>
+          Mua hàng và thanh toán Online<br />
+          Mua hàng trả góp Online<br />
+          Mua hàng trả góp bằng thẻ tín dụng<br />
+          Chính sách giao hàng<br />
+          Tra điểm Smember<br />
+          Xem ưu đãi Smember<br />
+          Tra thông tin bảo hành<br />
+          Tra cứu hoá đơn điện tử<br />
+          Thông tin hoá đơn mua hàng<br />
+          Trung tâm bảo hành chính hãng<br />
+        </p>
+      </div>
+      <div class="infoItems">
+        <h4>Dịch vụ và thông tin khách</h4>
+        <p>
+          Khách hàng doanh nghiệp (B2B)<br />
+          Ưu đãi thanh toán<br />
+          Quy chế hoạt động<br />
+          Chính sách bảo mật thông tin cá nhân<br />
+          Chính sách Bảo hành<br />
+          Liên hệ hợp tác kinh doanh<br />
+          Tuyển dụng<br />
+          Dịch vụ bảo hành mở rộng<br />
+          Smember: Tích điểm & sử dụng ưu đãi<br />
+        </p>
+      </div>
+      <div class="infoItems">
+        <h4>Kết nối với BKHT</h4>
+        <div>
+          <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-youtube.png" alt="YouTube" />
+          <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-facebook.png" alt="Facebook" />
+          <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-instagram.png" alt="Instagram" />
+          <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-tiktok.png" alt="TikTok" />
+          <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-zalo.png" alt="Zalo" />
+        </div>
+        <p>
+          Trung tâm bảo hành uỷ quyền Apple<br />
+          Trung tâm bảo hành uỷ quyền Apple<br />
+          Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+          Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+        </p>
+      </div>
+      <div class="rong"></div>
+    </footer>
+
+    <script src="../js/d.js"></script>
+  </body>
+</html>

@@ -19,13 +19,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css\sanpham(nologin).css" />
+    <link rel="stylesheet" href="../css/sanpham(nologin).css" />
+    <link rel="stylesheet" href="../css/phantrang.css">
   </head>
   <body>
     <div class="slider">
       <div class="slides">
         <div class="slide" style="background-color: black">
-          <a href="https://www.thegioididong.com/" target="_blank">
+          <a href="#" target="_blank">
             <img
               src="https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fbanners%2F2024%2F8%2F30%2F1%2F1727685880678_header_780_x_100.jpg&w=384&q=75"
               alt="Anh1"
@@ -33,7 +34,7 @@
           </a>
         </div>
         <div class="slide" style="background-color: #e9efff">
-          <a href="https://cellphones.com.vn/" target="_blank">
+          <a href="#" target="_blank">
             <img
               src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Giao%20hang.svg"
               alt="Anh2"
@@ -57,7 +58,7 @@
           </a>
         </div>
         <div class="slide" style="background-color: rgba(255, 166, 0, 0.899)">
-          <a href="https://didongviet.vn/" target="_blank">
+          <a href="#" target="_blank">
             <img
               src="https://didongviet.vn/_next/image?url=https%3A%2F%2Fcdn-v2.didongviet.vn%2Ffiles%2Fbanners%2F2024%2F9%2F8%2F1%2F1728389479729_header_03.png&w=1920&q=75"
               alt="Anh5"
@@ -69,15 +70,17 @@
     <header id="top" class="dau">
         <!--Thương hiệu-->
         <div class="thuonghieu">
-          <div class="th">
-            <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
-            <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
-          </div>
+          <a href="index.html">
+            <div class="th" style="height: 68px;">
+              <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+              <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+            </div>
+          </a>
         </div>
   
         <!--Phần search-->
         <div class="InputContainer">
-          <form action="sanpham.html" method="GET" class="search-form">
+          <form action="ketquatimkiem(nologin).html" method="GET" class="search-form">
             <input
               placeholder="Search"
               id="input"
@@ -138,7 +141,7 @@
       <div class="slide-show" id="slider1">
         <div class="list-images">
           <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/iphone-16-thuong-mua-ngay.jpg" alt="Anh1">
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/s24-ultra-thang-10-cate.png" alt="Anh2">
+          <img style="height: 100px;" src="https://clickbuy.com.vn/uploads/media/657-hhppS.jpg" alt="Anh2">
           <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/xiaomi-14T-series-cate-mo-ban.jpg" alt="Anh3">
           <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/real-me-note-60-cate-6-9-2024.png" alt="Anh4">
           <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/dien-thoai-xiaomi-redmi-14c-cate-30-8.jpg" alt="Anh5">
@@ -159,7 +162,7 @@
       </div>
       <div class="slide-show" id="slider2">
         <div class="list-images">
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/s24-ultra-thang-10-cate.png" alt="Anh2">
+          <img style="height: 100px;" src="https://clickbuy.com.vn/uploads/media/657-hhppS.jpg" alt="Anh2">
           <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/xiaomi-14T-series-cate-mo-ban.jpg" alt="Anh3">
           <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/real-me-note-60-cate-6-9-2024.png" alt="Anh4">
           <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:80/plain/https://dashboard.cellphones.com.vn/storage/dien-thoai-xiaomi-redmi-14c-cate-30-8.jpg" alt="Anh5">
@@ -234,6 +237,10 @@
             <h3 style="margin: 5px 0;">Danh mục sản phẩm</h3>
           </div>
         </div>
+        <div class="danhmucsanpham-yeucau">
+          <h4>Tên sản phẩm</h4>
+          <input type="text" id="name" >
+        </div>
         <div class="danhmucsanpham-loai">
           <h4>Loại sản phẩm:</h4>
           <div class="danhmucsanpham-loai_nd">
@@ -269,21 +276,6 @@
             <option value="10.000.000đ - 20.000.000đ">10.000.000đ - 20.000.000đ</option>
             <option value="20.000.000đ Trở lên">20.000.000đ Trở lên</option>
           </select>
-        </div>
-        <div class="danhmucsanpham-yeucau">
-          <h4>Yêu cầu:</h4>
-          <div class="danhmucsanpham-yeucau_nd">
-            <input type="radio" id="vanphong" name="fav_language" value="vanphong">
-            <label for="vanphong">Văn Phòng</label>
-          </div>
-          <div class="danhmucsanpham-yeucau_nd">
-            <input type="radio" id="gaming" name="fav_language" value="gaming">
-            <label for="gaming">Gaming</label>
-          </div>
-          <div class="danhmucsanpham-yeucau_nd">
-            <input type="radio" id="dangsale" name="fav_language" value="dangsale">
-            <label for="dangsale">Đang sale</label>
-          </div> 
         </div>
         <div class="danhmucsanpham-tim" >
           <button class="button">Tìm kiếm</button>
@@ -1387,6 +1379,19 @@
 
     <!-- Phần nút quay lại đầu trang -->
     <a href="#top" class="scroll-to-top"><i class='bx bxs-upvote'></i></a>
+
+    <!-- Phân trang -->
+    <div class="phantrang_container">
+      <div class="phantrang_items">
+        <a href="sanpham(nologin).html">1</a>
+      </div>
+      <div class="phantrang_items z">
+        <a href="sanpham(nologin)2.html">2</a>
+      </div>
+      <div class="phantrang_items z">
+        <a href="index.html"><i class='bx bx-chevrons-right'></i></a>
+      </div>
+    </div>
 
 
     <!-- Phần footer -->
