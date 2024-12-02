@@ -1,0 +1,28 @@
+/*-------------------Đường dẫn -------------------*/
+
+.duongdan {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 2px 0 rgba(45, 45, 45, 0.47);
+  margin-bottom: 10px;
+}
+
+.nd_duongdan {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nd_duongdan a {
+  text-decoration: none;
+  margin: 0 5px;
+  color: black;
+}
+
+.nd_duongdan a:hover {
+  color: rgb(255, 166, 0);
+  text-decoration: underline;
+}
