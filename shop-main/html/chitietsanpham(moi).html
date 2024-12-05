@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chi tiết sản phẩm</title>
+        <link rel="stylesheet" href="../css/trangchu.css" />
+        <link rel="stylesheet" href="../css/chitietsanpham.css" />
+        <link rel="stylesheet" href="../css/sanpham.css">
+        <link rel="stylesheet" href="Achitietsanpham.css">
+        <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    </head>
+    <body style="background-color: white;">
+      <header id="top" class="dau">
+        <!--Thương hiệu-->
+        <div class="thuonghieu">
+          <a href="trangchu.html">
+            <div class="th" style="height: 68px;">
+              <img class="thuonghieu1" src="../img/logo.png" alt="anh2"  />
+              <img class="thuonghieu2" src="../img/logo_icon.png" alt="anh3" />
+            </div>
+          </a>
+        </div>
+  
+        <!--Phần search-->
+        <div class="InputContainer">
+          <form action="ketquatimkiem.html" method="GET" class="search-form">
+            <input
+              placeholder="Search"
+              id="input"
+              class="input"
+              name="query" 
+              type="text"
+            />
+            <!-- Button đóng vai trò là icon tìm kiếm -->
+            <button type="submit" class="labelforsearch">
+              <div class="searchIcon">
+                <i class="bx bx-search"></i>
+              </div>
+            </button> 
+          </form>
+        </div>
+  
+        <!--Phần menu-->
+  
+          <!-- Menu -->
+          <div class="menu">
+            <div class="thongtin">
+              <div class="thongtincon" id="small" onclick="toggleTooltip()">
+                <i class="bx bx-user-circle"></i>
+                <div class="tooltip">
+                  <div class="tooltip-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScT_mFJcmtcWjfwLFCXxRcA9LcZsGlLV3enA&s" alt="anhdaidien">
+                    <h4>Xin chào , Steve!</h4>
+                  </div>
+                  <div class="tooltip-2">
+                    <h5>Thông báo</h5>
+                    <hr>
+                    <div class="tooltip-2-nd-thongbao">
+                      <p>Trống</p>
+                    </div>
+                  </div>
+                  <div class="tooltip-4">
+                    <a href="cart_history.html">Lịch sử giỏ hàng</a>
+                  </div>
+                  <div class="tooltip-3">
+                    <a href="index.html">Đăng xuất</a>
+                  </div>
+                </div>
+              </div>
+              <div class="overlay" onclick="hideTooltip()"></div>
+              <div class="thongtincon-1">
+                <i class="bx bx-phone"></i>
+                <div class="dathang">
+                  <a href="#">Đặt hàng</a>
+                  <a href="#">1800.1915</a>
+                </div>
+              </div>
+              <div class="thongtincon-1">
+                <i class="bx bx-map"></i>
+                <a href="#1">TP.HCM</a>
+              </div>
+              <div class="thongtincon" id="giohang">
+                <i class="bx bx-cart-download"></i>
+                <a href="cart.html">Giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- chi tiết sản phẩm -->
+      <div class="product-page">
+        <!-- Phần bên trái -->
+        <div class="product-left">
+            <div class="product-main-image">
+                <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/iphone-16-pro-max.png" alt="Sản phẩm">
+            </div>
+            <div class="product-thumbnails">
+                <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/iphone-16-pro-max-2.png" alt="Thumbnail 1">
+                <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/iphone-16-pro-max-3.png" alt="Thumbnail 2">
+                <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/iphone-16-pro-max-4.png" alt="Thumbnail 3">
+                <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/iphone-16-pro-max-6.png" alt="Thumbnail 3">
+            </div>
+    
+            <div class="highlighted-features">
+                <h2>Đặc điểm nổi bật</h2>
+                <ul>
+                    <li><a href="#">iPhone 16 Series</a> ngoại hình hoàn thiện cao cấp, thiết kế màu sắc mới đẹp mắt</li>
+                    <li>Tấm nền Super Retina XDR hiển thị sắc nét, màu sắc sống động, chân thực</li>
+                    <li>Chip Apple A18 Pro siêu mạnh mẽ, xử lý tốt mọi tác vụ, chơi game mượt mà</li>
+                    <li>Hệ thống camera với cảm biến chính lớn tới 48MP, chụp ảnh và quay video sắc nét</li>
+                    <li>Camera trước độ phân giải đến 12MP, chụp selfie rõ nét, đẹp tự nhiên và cuốn hút</li>
+                    <li>Mạng di động 5G giúp xem trực tuyến, tải xuống các ứng dụng nhanh chóng</li>
+                    <li><a href="#">Điện thoại iPhone 16 Series</a> đạt chỉ số kháng nước chuẩn IP68, yên tâm sử dụng</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Phần bên phải -->
+        <div class="product-right">
+            <h1>iPhone 16 Pro Max 256GB Chính Hãng</h1>
+            <p class="price">33.490.000đ</p>
+            <p class="discount">- Giảm ngay: 1.500.000đ</p>
+            <div class="variants">
+                <h3>Chọn màu sắc:</h3>
+                <button class="variant active">Titan Bạc</button>
+                <button class="variant ">Titan Đen</button>
+            </div>
+    
+            <div class="storage">
+                <h3>Chọn dung lượng:</h3>
+                <button class="variant active">128GB</button>
+                <button class="variant ">256GB</button>
+                <button class="variant">512GB</button>
+            </div>
+            <!-- Bảng thông số kỹ thuật -->
+            <table class="specifications">
+                <tr>
+                    <td>Độ phân giải camera</td>
+                    <td>Camera 12MP, khẩu độ f/1.9<br>48MP (f/1.78) x 12MP (f/1.6) x 48MP (f/2.2) x 12MP (f/2.8)</td>
+                </tr>
+                <tr>
+                    <td>Hệ điều hành</td>
+                    <td>iOS 18</td>
+                </tr>
+                <tr>
+                    <td>Bộ nhớ trong</td>
+                    <td>256GB</td>
+                </tr>
+                <tr>
+                    <td>Số khe SIM</td>
+                    <td>1 Nano SIM</td>
+                </tr>
+                <tr>
+                    <td>Mạng di động</td>
+                    <td>5G</td>
+                </tr>
+                <tr>
+                    <td>Vi xử lý</td>
+                    <td>Apple A18 Pro</td>
+                </tr>
+                <tr>
+                    <td>Công nghệ màn hình</td>
+                    <td>Super Retina XDR</td>
+                </tr>
+                <tr>
+                    <td>Độ phân giải</td>
+                    <td>2868 × 1320</td>
+                </tr>
+                <tr>
+                    <td>Kích thước màn hình</td>
+                    <td>6.9"</td>
+                </tr>
+            </table>
+    
+            
+    
+            <div class="promotion">
+                <h3>Ưu đãi:</h3>
+                <ul>
+                    <li>Giảm thêm 2.000.000đ khi thanh toán qua ví điện tử.</li>
+                    <li>Trả góp 0% lãi suất với kỳ hạn 6 tháng.</li>
+                </ul>
+            </div>
+            <button class="buy-now" onclick="window.location.href='cart.html'">MUA NGAY</button>
+            <p class="delivery-note">Giao hàng miễn phí toàn quốc</p>
+
+    <script>
+        // JavaScript để chuyển hướng khi nhấn nút
+        function redirectToLink() {
+            window.location.href = 'cart.html';
+        }
+    </script>
+        </div>
+    </div>
+    
+    
+        <!-- Phần footer -->
+    <footer style="margin-top: 10px;">
+        <div class="infoItems">
+          <h4>Tổng đài hỗ trợ miễn phí</h4>
+          <p>
+            Gọi mua hàng 1800.2097 (7h30 - 22h00)<br />
+            Gọi khiếu nại 1800.2063 (8h00 - 21h30)<br />
+            Gọi bảo hành 1800.2064 (8h00 - 21h00)<br />
+          </p>
+          <h4>Phương thức thanh toán</h4>
+          <div style="display: flex; flex-wrap: wrap;">
+            <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/vnpay-logo.png" alt="VNPay" />
+            <img src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/momo_1.png" alt="momo" />
+            <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/onepay-logo.png" alt="OnePay" />
+            <img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/mpos-logo.png" alt="mPos" />
+          </div>
+        </div>
+        <div class="infoItems">
+          <h4>Thông tin và chính sách</h4>
+          <p>
+            Mua hàng và thanh toán Online<br />
+            Mua hàng trả góp Online<br />
+            Mua hàng trả góp bằng thẻ tín dụng<br />
+            Chính sách giao hàng<br />
+            Tra điểm Smember<br />
+            Xem ưu đãi Smember<br />
+            Tra thông tin bảo hành<br />
+            Tra cứu hoá đơn điện tử<br />
+            Thông tin hoá đơn mua hàng<br />
+            Trung tâm bảo hành chính hãng<br />
+          </p>
+        </div>
+        <div class="infoItems">
+          <h4>Dịch vụ và thông tin khách</h4>
+          <p>
+            Khách hàng doanh nghiệp (B2B)<br />
+            Ưu đãi thanh toán<br />
+            Quy chế hoạt động<br />
+            Chính sách bảo mật thông tin cá nhân<br />
+            Chính sách Bảo hành<br />
+            Liên hệ hợp tác kinh doanh<br />
+            Tuyển dụng<br />
+            Dịch vụ bảo hành mở rộng<br />
+            Smember: Tích điểm & sử dụng ưu đãi<br />
+          </p>
+        </div>
+        <div class="infoItems">
+          <h4>Kết nối với BKHT</h4>
+          <div>
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-youtube.png" alt="YouTube" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-facebook.png" alt="Facebook" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-instagram.png" alt="Instagram" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-tiktok.png" alt="TikTok" />
+            <img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-zalo.png" alt="Zalo" />
+          </div>
+          <p>
+            Trung tâm bảo hành uỷ quyền Apple<br />
+            Trung tâm bảo hành uỷ quyền Apple<br />
+            Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+            Kênh thông tin giải trí công nghệ cho giới trẻ<br />
+          </p>
+        </div>
+        <div class="rong"></div>
+      </footer>
+
+      <script src="../js/d.js"></script>
+
+    </body>
+</html>
