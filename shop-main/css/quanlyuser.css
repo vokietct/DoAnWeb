@@ -1,70 +1,70 @@
-
+h2 {
+  color: #297be0b1;
+}
 .search-bar {
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin: 20px 0;
 }
 
 .search-bar input {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
 }
 
 .search-bar button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #297be0b1;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-
+  padding: 10px 20px;
+  border: none;
+  background-color: #297be0b1;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
 }
 
 .search-bar button:hover {
-    background-color: rgba(98, 151, 216, 0.694);
+  background-color: rgba(98, 151, 216, 0.694);
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 thead th {
-    background-color: #297be0b1;
-    color: #fff;
-    padding: 10px;
-    text-align: left;
+  background-color: #297be0b1;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
 }
 
 tbody td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 tbody tr:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .bam {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
-
 table td:nth-child(4) {
-    width: 100px; /* Đặt chiều rộng tùy ý */
-  }
-  table td:nth-child(5) {
-    width: 100px; /* Đặt chiều rộng tùy ý */
-  }
+  width: 100px; /* Đặt chiều rộng tùy ý */
+}
+table td:nth-child(5) {
+  width: 100px; /* Đặt chiều rộng tùy ý */
+}

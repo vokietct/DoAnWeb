@@ -1,132 +1,152 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .user-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .user-image {
-    margin-bottom: 20px;
-  }
-  
-  .user-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ccc;
-  }
-  
-  .change-button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    font-size: 14px;
-    background: #297be0b1;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .change-button:hover {
-    background: #5793dcb1;
-  }
-  
-  form {
-    width: 100%;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
-  label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  input, select {
-    width: calc(100% - 20px);
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input:focus, select:focus {
-    border-color: #297be0b1;
-    outline: none;
-  }
-  
-  .form-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .close-button {
-    background: #ccc;
-    color: #000;
-  }
-  
-  .close-button:hover {
-    background: #bbb;
-  }
-  
-  .update-button {
-    background: #297be0b1;
-    color: #fff;
-  }
-  
-  .update-button:hover {
-    background: #297be0b1;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
 
-.input_user{
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #297be0b1;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-image {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.change-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background: #297be0b1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.change-button:hover {
+  background: #5793dcb1;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.form-group input,
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+.form-group label {
+  color: #297be0b1;
+  font-weight: bolder;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+  border-color: #297be0b1;
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-button {
+  background: #ccc;
+  color: #000;
+}
+
+.close-button:hover {
+  background: #bbb;
+}
+
+.update-button {
+  background: #297be0b1;
+  color: #fff;
+}
+
+.update-button:hover {
+  background: #297be0b1;
+}
+
+.input_user {
   max-width: 900px;
   width: 100%;
   max-height: 900px;
   height: 100%;
-
 }
-.gird_button{
+.gird_button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   display: flex;
   justify-items: center;
-  
 }
-.btn{
+.btn {
   margin-left: 10px;
 }

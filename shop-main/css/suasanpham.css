@@ -1,44 +1,51 @@
-.sua-sanpham{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 100px;
+.sua-sanpham {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 100px;
 }
-.sua-sanpham p{
-    margin-top: 10px;
-    font-size: 20px;
+.sua-sanpham p {
+  margin-top: 10px;
+  font-size: 20px;
 }
-.xoa-anh{
-    position: relative;
-    width:160px ;
-}
-.anh-xoa{
-    width: 150px;
-    padding: 5px;
-    box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.6);
-    border-radius: 5px;
-
-}
-.xoa{
-    background-color: rgb(232, 38, 38);
-    color: rgb(0, 0, 0);
-    padding-left: 5px;
-    padding-right: 5px;
-    position: absolute;
-    top: 5px;
-    right: 30px;
-    border-radius: 20px;
-}
-.anh-xoa:hover{
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
-.sua-anh{
-    padding-top: 10px;
-    display: grid ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+h2 {
+  margin-bottom: 15px;
+  color: #297be0b1;
 }
 
-.all-sua{
+.form-group input {
+  margin-left: 10px;
+}
+.xoa-anh {
+  position: relative;
+  width: 160px;
+}
+.anh-xoa {
+  width: 150px;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.6);
+  border-radius: 5px;
+}
+.xoa {
+  background-color: rgb(232, 38, 38);
+  color: rgb(0, 0, 0);
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  border-radius: 20px;
+}
+.anh-xoa:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.sua-anh {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.all-sua {
   position: fixed;
   top: 80px;
   left: 250px;
@@ -46,51 +53,49 @@
   right: 50px;
 }
 
-.in-sua{
-
-    background: white;
-    padding: 10px;
-    border-radius: 20px;
-    border: 2px solid #297be0b1;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+.in-sua {
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #297be0b1;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.themhinhanh{
-    padding-top: 20px;
+.themhinhanh {
+  padding-top: 20px;
 }
-.button-sua-in{
-   padding: 10px;
-    
+.button-sua-in {
+  padding: 10px;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
 .button-container a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-decoration: none; 
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .button-container {
-    display: flex;            /* Kích hoạt Flexbox */
-    justify-content: flex-end; /* Đẩy nội dung sang bên phải */
+  display: flex; /* Kích hoạt Flexbox */
+  justify-content: flex-end; /* Đẩy nội dung sang bên phải */
 }
 .sua_ben_trai {
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 textarea {
-    font-size: 15px; /* Kích thước chữ cố định */
-    width: 100%; /* Chiều rộng toàn màn hình */
-    height: 100px; /* Chiều cao cố định */
-    padding: 5px; /* Khoảng cách bên trong */
-    box-sizing: border-box; /* Tính cả padding vào kích thước */
-    resize: none; /* Vô hiệu hóa thay đổi kích thước */
-    border: 1px solid #ccc; /* Đường viền tùy chọn */
-    border-radius: 5px; /* Tùy chọn bo góc */
-  }
+  font-size: 15px; /* Kích thước chữ cố định */
+  width: 100%; /* Chiều rộng toàn màn hình */
+  height: 100px; /* Chiều cao cố định */
+  padding: 5px; /* Khoảng cách bên trong */
+  box-sizing: border-box; /* Tính cả padding vào kích thước */
+  resize: none; /* Vô hiệu hóa thay đổi kích thước */
+  border: 1px solid #ccc; /* Đường viền tùy chọn */
+  border-radius: 5px; /* Tùy chọn bo góc */
+}
