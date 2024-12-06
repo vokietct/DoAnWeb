@@ -41,13 +41,27 @@
     <!-- table -->
     <div class="khung">
       <h2>Thêm sản phẩm</h2>
-      <button class="btn them" onclick="window.location.href='quanlysanpham_button.html'">Thêm sản phẩm</button>
-      <script>
-          // JavaScript để chuyển hướng khi nhấn nút
-          function redirectToLink() {
-              window.location.href = 'quanlysanpham_button.html';
-          }
-      </script>
+    <form>
+      <div class="form-group">
+          <label for="product-name">Tên sản phẩm</label>
+          <input type="text" id="product-name" name="product-name">
+      </div>
+      <div class="form-group">
+          <label for="soluong">Số lượng sản phẩm</label>
+          <input type="text" id="soluong" name="soluong">
+      </div>
+      <div class="form-group">
+          <label for="motta">Mô tả sản phẩm</label>
+          <input type="text" id="motta" name="motta">
+      </div>
+      <div class="form-group">
+          <label for="add-image">Hình ảnh sản phẩm</label>
+          <input type="file" id="add-image" name="add-image">
+      </div>
+      <div class="form-group button-sua-in">
+          <button type="submit" class="btn sua"><a href="quanlysanpham.html">Thêm sản phẩm</a></button>
+        </div> 
+  </form>
       <div>
         <div>
           <h2>Tìm kiếm sản phẩm</h2>

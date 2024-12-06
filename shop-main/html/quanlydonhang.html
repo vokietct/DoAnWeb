@@ -34,7 +34,6 @@
       <h2>Menu</h2>
       <a href="taikhoan.html">Tài khoản Admin</a>
       <a href="quanlyuser.html">Quản lý người dùng</a>
-      <a href="themsanpham.html">Thêm sản phẩm</a>
       <a href="quanlysanpham.html">Quản lý sản phẩm</a>
       <a href="quanlydonhang.html">Quản lý đơn hàng</a>
       <a href="thongke.html">Thống kê kinh doanh</a>
@@ -43,7 +42,7 @@
     <!-- funcion -->
     <div class="khung">
       <h2>Lọc đơn hàng</h2>
-      <div class="filter-form">
+      <!-- <div class="filter-form">
         <form>
           <div class="form-group">
             <label for="from-date">Từ ngày</label>
@@ -76,19 +75,56 @@
             <button type="submit" class="btn them">Lọc đơn hàng</button>
           </div>
         </form>
+      </div> -->
+      <div class="filter-section">
+        <select>
+          <option value="">Thành phố</option>
+          <option value="">TP Hồ Chí Minh</option>
+          <option value="">Hà Nội</option>
+          <option value="">Đà Nẵng</option>
+          <option value="">Đà Lạt</option>
+        </select>
+        <select>
+          <option value="">Quận/Huyện</option>
+          <option value="">Quận 1</option>
+          <option value="">Quận 2</option>
+          <option value="">Quận 3</option>
+          <option value="">Quận 4</option>
+          <option value="">Quận 5</option>
+          <option value="">Quận 6</option>
+          <option value="">Quận 7</option>
+          <option value="">Quận 8</option>
+          <option value="">Quận 10</option>
+        </select>
+        <input type="text" placeholder="Nhập địa chỉ">
+        <div class="date-filter">
+          <label for="from-date">Từ:</label>
+          <input type="date" id="from-date">
+          <label for="to-date">đến</label>
+          <input type="date" id="to-date">
+        </div>
+        <label for="status" class="status-label">Trạng thái:</label>
+        <select id="status" name="status">
+          <option value="all">Trạng thái</option>
+          <option value="chua-xu-ly">Chưa xử lý</option>
+          <option value="da-xac-nhan">Đã xác nhận</option>
+          <option value="da-giao-thanh-cong">Đã giao thành công</option>
+          <option value="da-huy">Đã hủy</option>
+        </select>
+        <button class="filter-button">Lọc</button>
+        
       </div>
-
       <h2>Danh sách đơn hàng</h2>
       <table class="order-table">
         <thead>
           <tr>
-            <th>ID</th>
+            <th>Mã đơn</th>
             <th>Khách hàng</th>
             <th>Ngày đặt</th>
             <th>Sản phẩm</th>
             <th>Trạng thái</th>
             <th>Địa chỉ giao hàng</th>
-            <th>Hành động</th>
+            <th>Xem đơn hàng</th>
           </tr>
         </thead>
         <tbody>
@@ -99,7 +135,7 @@
             <td>Iphone 4</td>
             <td>Chưa xử lý</td>
             <td>Quận 3</td>
-            <td><a href="#">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang.html">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>02</td>
@@ -108,7 +144,7 @@
             <td>Iphone 5</td>
             <td>Đã xác nhận</td>
             <td>Quận 5</td>
-            <td><a href="#">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>03</td>
@@ -117,7 +153,7 @@
             <td>Iphone 6</td>
             <td>Đã xác nhận</td>
             <td>Quận 4</td>
-            <td><a href="#">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>04</td>
@@ -126,7 +162,7 @@
             <td>Iphone 7</td>
             <td>Đã hủy</td>
             <td>Quận 5</td>
-            <td><a href="#">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>05</td>
@@ -135,10 +171,22 @@
             <td>Iphone 8</td>
             <td>Đã xác nhận</td>
             <td>Quận 1</td>
-            <td><a href="#">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
           </tr>
         </tbody>
       </table>
+      <div class="phantrang_container">
+        <div class="phantrang_items">
+          <a >1</a>
+        </div>
+        <div class="phantrang_items z">
+          <a >2</a>
+        </div>
+        <div class="phantrang_items z">
+          <a >>></a>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>

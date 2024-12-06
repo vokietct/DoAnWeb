@@ -76,3 +76,53 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #f1f1f1;
 }
+/* Khu vực bộ lọc */
+.filter-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Giữ các phần tử trên một hàng */
+  }
+  
+  .filter-section select, 
+  .filter-section input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1; /* Các input và select có thể giãn đều */
+    min-width: 150px;
+  }
+  
+  .date-filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 2; /* Tăng kích thước phần chọn ngày để cân đối */
+  }
+  
+  .status-label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 5px;
+  }
+  
+  .filter-button {
+    background: #297be0b1;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-grow: 0; /* Không cho nút "Lọc" giãn */
+  }
+  
+  .filter-button:hover {
+    background: #5591dab1 ;
+  }
+  
+  .sale{
+    margin-top: 10px;
+  }

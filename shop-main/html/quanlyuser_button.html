@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/topadmin.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/quanlyuser.css" />
-    <!-- <link rel="stylesheet" href="../css/quanlysanpham.css" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -44,16 +43,25 @@
      
     <div class="khung">
       <h2>Thêm người dùng</h2>
-      <div class="form-group button-sua-in">
-        <button class="btn them" onclick="window.location.href='quanlyuser_button.html'">Thêm người dùng</button>
-        <script>
-            // JavaScript để chuyển hướng khi nhấn nút
-            function redirectToLink() {
-                window.location.href = 'quanlyuser_button.html';
-            }
-        </script>
-    </div>
-    <h2>Tìm kiếm người dùng</h2>
+      <form>
+        <div class="form-group">
+          <label for="product-name">Tên người dùng</label>
+          <input type="text" id="product-name" name="product-name" />
+        </div>
+        <div class="form-group">
+          <label for="soluong">Số điện thoại</label>
+          <input type="text" id="soluong" name="soluong" />
+        </div>
+        <div class="form-group">
+          <label for="motta">Email</label>
+          <input type="text" id="motta" name="motta" />
+        </div>
+        <div class="form-group button-sua-in">
+          <button type="submit" class="btn sua"><a href="quanlyuser.html">Thêm người dùng</a></button>
+        </div>
+      </form>
+      <div>
+        <h2>Tìm kiếm người dùng</h2>
         <div class="search-bar">
           <input type="text" placeholder="Tìm kiếm khách hàng..." />
           <button>Tìm</button>

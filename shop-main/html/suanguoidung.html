@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Người quản trị</title>
+    <link rel="stylesheet" href="../css/csadmin.css" />
+    <link rel="stylesheet" href="../css/topadmin.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/quanlysanpham.css" />
+    <link rel="stylesheet" href="../css/quanlyuser.css" />
+    <link rel="stylesheet" href="../css/suanguoidung.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="top-left">
+        <img src="../img/logo.png" class="logo" />
+      </div>
+      <div class="top-mid"></div>
+      <div class="top-right">
+        <a>
+          <img src="../img/home-smile-solid-240.png" class="home" />
+        </a>
+        <a>
+          <img src="../img/phone-call-solid-240.png" class="phone" />
+        </a>
+      </div>
+    </div>
+    <!-- topp -->
+    <!-- nội Dung-->
+    <div class="menu">
+      <h2>Menu</h2>
+      <a href="taikhoan.html">Tài khoản Admin</a>
+      <a href="quanlyuser.html">Quản lý người dùng</a>
+      <a href="quanlysanpham.html">Quản lý sản phẩm</a>
+      <a href="quanlydonhang.html">Quản lý đơn hàng</a>
+      <a href="thongke.html">Thống kê kinh doanh</a>
+    </div>
+    <!-- table -->
+    <div class="khung">
+        <h1>Sửa Thông Tin Người Dùng</h1>
+        <div class="user-form">
+          <div class="user-image">
+            <img src="https://th.bing.com/th/id/OIP.sQ6EnzoemY0Glbe7-BpBpgHaFK?rs=1&pid=ImgDetMain" alt="User">
+            <button class="change-button">Thay đổi</button>
+          </div>
+            <div class="input_user"><form>
+                <div class="form-group">
+                  <label for="name">Tên</label>
+                  <input type="text" id="name" value="Nguyễn Văn B">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" value="NguyenvanB@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="email">Số điện thoại</label>
+                    <input type="tel" id="text" value="094551289">
+                  </div>
+                <div class="form-group">
+                    <label for="user-type">Trạng thái</label>
+                    <select id="user-type">
+                      <option value="admin">Hoạt động</option>
+                      <option value="user">Khóa</option>
+                    </select>
+                  </div>
+                  
+                <div class="gird_button">
+                    <div class="form-group button-sua-in">
+                        <button type="submit" class="btn sua"><a href="quanlyuser.html">Cập nhập</a></button>
+                    </div>
+                    <div class="form-group button-sua-in">
+                        <button
+                      onclick="alert('Bạn có chắc xóa người dùng');"
+                      class="btn xoasanpham"
+                      
+                    >
+                     <a href="quanlyuser.html"> Xóa người dùng</a>
+                    </button>
+                    </div>  
+                </div>      
+                
+              </form></div>
+        </div>
+    </div>
+  </body>
+  <script src="../js/jsadmin.js"></script>
+</html>

@@ -22,7 +22,7 @@
 }
 
 .search-bar button:hover {
-    background-color: #18549eb1;
+    background-color: rgba(98, 151, 216, 0.694);
 }
 
 table {
@@ -60,3 +60,11 @@ tbody tr:hover {
     cursor: pointer;
     margin-right: 5px;
 }
+
+
+table td:nth-child(4) {
+    width: 100px; /* Đặt chiều rộng tùy ý */
+  }
+  table td:nth-child(5) {
+    width: 100px; /* Đặt chiều rộng tùy ý */
+  }

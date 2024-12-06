@@ -1,44 +1,30 @@
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 thead th {
-    background-color: #297be0b1;
-    color: #fff;
-    padding: 10px;
-    text-align: left;
+  background: #297be0b1;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
 }
 
 tbody td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
 }
 
 tbody tr:hover {
-    background-color: #f1f1f1;
+  background: #f9f9f9;
 }
 
-.bam {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 5px;
+/* Liên kết */
+a {
+  color: #007bff;
+  text-decoration: none;
 }
-table td:nth-child(6) {
-    width: 100px; /* Đặt chiều rộng tùy ý */
-  }
-  table td:nth-child(5) {
-    width: 200px; /* Đặt chiều rộng tùy ý */
-  }
 
 /* Khu vực bộ lọc */
 .filter-section {
@@ -46,7 +32,7 @@ table td:nth-child(6) {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-    flex-wrap: nowrap; /* Giữ các phần tử trên một hàng */
+    flex-wrap: wrap; /* Giữ các phần tử trên một hàng */
   }
   
   .filter-section select, 
@@ -87,3 +73,24 @@ table td:nth-child(6) {
     background: #5591dab1 ;
   }
   
+  .sale{
+    margin-top: 10px;
+  }
+
+  .button-container a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+}
+.button-container {
+    display: flex;            /* Kích hoạt Flexbox */
+    justify-content: flex-end; /* Đẩy nội dung sang bên phải */
+}
+.sua_ben_trai {
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}

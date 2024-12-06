@@ -32,7 +32,6 @@
         <h2>Menu</h2>
         <a href="taikhoan.html">Tài khoản Admin</a>
         <a href="quanlyuser.html">Quản lý người dùng</a>
-        <a href="themsanpham.html">Thêm sản phẩm</a>
         <a href="quanlysanpham.html">Quản lý sản phẩm</a>
         <a href="quanlydonhang.html">Quản lý đơn hàng</a>
         <a href="thongke.html">Thống kê kinh doanh</a>
@@ -41,19 +40,16 @@
     <!-- funcion -->
      <div class="khung">
         <h2>Thống kê kinh doanh</h2>
-        <div class="loc">
-            <div class="form-group-inline">
-                <label for="from-date">Từ ngày:</label>
-                <input type="date" id="from-date" name="from-date">
-            </div>
-            <div class="form-group-inline">
-                <label for="to-date">Đến ngày:</label>
-                <input type="date" id="to-date" name="to-date">
-            </div>
-            <div>
-                <button  class="loc-button">Lọc đơn hàng</button>
-            </div>
-        </div> 
+        <div class="filter-section">
+            <div class="date-filter">
+              <label for="from-date">Từ:</label>
+              <input type="date" id="from-date">
+              <label for="to-date">đến</label>
+              <input type="date" id="to-date">
+            </div>    
+            <button class="filter-button">Lọc</button>
+            
+          </div>
         <table>
             <thead>
                 <tr>
@@ -73,7 +69,7 @@
                     <td>10</td>
                     <td>300,000,000 VNĐ</td>
                     <td>Hiện đại</td>
-                    <td><a href="#">Xem hóa đơn</a></td>
+                    <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
                 </tr>
                 
             </tbody>
@@ -86,7 +82,7 @@
                     <td>5</td>
                     <td>110,000,000 VNĐ</td>
                     <td>Đa chức năng</td>
-                    <td><a href="#">Xem hóa đơn</a></td>
+                    <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
                 </tr>
                 
             </tbody>
@@ -99,7 +95,7 @@
                     <td>7</td>
                     <td>105,000,000 VNĐ</td>
                     <td>Hiện đại</td>
-                    <td><a href="#">Xem hóa đơn</a></td>
+                    <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
                 </tr>
                 
             </tbody>
@@ -112,7 +108,7 @@
                     <td>10</td>
                     <td>300,000,000 VNĐ</td>
                     <td>Hiện đại</td>
-                    <td><a href="#">Xem hóa đơn</a></td>
+                    <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
                 </tr>
                 
             </tbody>
@@ -125,11 +121,28 @@
                     <td>12</td>
                     <td>350,000,000 VNĐ</td>
                     <td>Hiện đại</td>
-                    <td><a href="#">Xem hóa đơn</a></td>
+                    <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
                 </tr>
                 
             </tbody>
         </table>
+        <div class="sale">
+            <p><strong>BÁN CHẠY NHẤT: </strong>Oppo Reno 12</p>
+            <p><strong>BÁN Ế NHẤT: </strong>OPPO Find X8</p>
+
+          </div>
+        <div class="phantrang_container">
+            <div class="phantrang_items">
+              <a >1</a>
+            </div>
+            <div class="phantrang_items z">
+              <a >2</a>
+            </div>
+            <div class="phantrang_items z">
+              <a >>></a>
+            </div>
+          </div>
+        
         <h2>Khách hàng có doanh thu cao nhất</h2>
     <table>
         <thead>
@@ -145,35 +158,46 @@
                 <td>khách hàng A</td>
                 <td>15.040.99 VNĐ</td>
                 <td>Mua nhiều.</td>
-                <td><a href="#">xem hóa đơn</a></td>
+                <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
             </tr>
             <tr>
                 <td>khách hàng B</td>
                 <td>16.230.34 VNĐ</td>
                 <td>Mua nhiều.</td>
-                <td><a href="#">xem hóa đơn</a></td>
+                <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
             </tr>
             <tr>
                 <td>khách hàng C</td>
                 <td>46.000.44 VNĐ</td>
                 <td>Mua nhiều.</td>
-                <td><a href="#">xem hóa đơn</a></td>
+                <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
             </tr>
             <tr>
                 <td>khách hàng D</td>
                 <td>98.099.34 VNĐ</td>
                 <td>Sản phẩm giá trị lớn</td>
-                <td><a href="#">xem hóa đơn</a></td>
+                <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
             </tr>
             <tr>
                 <td>khách hàng E</td>
                 <td>12.230.34 VNĐ</td>
                 <td>Khách quen</td>
-                <td><a href="#">xem hóa đơn</a></td>
+                <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
             </tr>
             
         </tbody>
     </table>
+    <div class="phantrang_container">
+        <div class="phantrang_items">
+          <a >1</a>
+        </div>
+        <div class="phantrang_items z">
+          <a >2</a>
+        </div>
+        <div class="phantrang_items z">
+          <a >>></a>
+        </div>
+      </div>
     </div>
      </div>
 </body>

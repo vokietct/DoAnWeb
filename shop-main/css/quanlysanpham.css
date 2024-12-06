@@ -113,12 +113,30 @@ tbody tr:hover {
 .themhinhanh{
     padding-top: 20px;
 }
-.button-sua-in{
-   padding: 10px;
-    
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
 }
 
-.hide{
-    display: none;
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #297be0b1;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.search-bar button:hover {
+    background-color: rgba(98, 151, 216, 0.694);
 }
 

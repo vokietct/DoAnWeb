@@ -1,0 +1,90 @@
+/* Thiết lập cơ bản cho trang */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Khu vực bộ lọc */
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap; /* Đảm bảo tất cả nằm trên một hàng */
+}
+
+.filter-section select, 
+.filter-section input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1; /* Cho phép các input và select giãn đều */
+  min-width: 150px;
+}
+
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 2; /* Tăng độ giãn phần chọn ngày */
+}
+
+.filter-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-grow: 0; /* Nút "Lọc" không giãn */
+}
+
+.filter-button:hover {
+  background: #0056b3;
+}
+
+/* Thiết lập bảng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background: #f1f1f1;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+}
+
+tbody td {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* Liên kết */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
