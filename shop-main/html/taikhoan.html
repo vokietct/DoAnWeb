@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="../css/topadmin.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/taikhoan.css" />
+    <link rel="stylesheet" href="../css/admin_input.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
@@ -29,9 +34,26 @@
       <div class="top-left">
         <img src="../img/logo.png" class="logo" />
       </div>
-      <div class="top-mid"></div>
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="taikhoan.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query"
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button>
+        </form>
+      </div>
       <div class="top-right">
-        <a>
+        <a href="index.html">
           <img src="../img/home-smile-solid-240.png" class="home" />
         </a>
         <a>
@@ -50,18 +72,33 @@
           />
           <div class="taikhoan">
             <div>
-              <p>Tài Khoản: Steve</p>
-              <p>Email: Steve123@gmail.com</p>
+              <div style="display: flex; flex-direction: row">
+                <h4 style="margin-right: 5px; color: #297be0b1">Tài Khoản:</h4>
+                <p>Steve123</p>
+              </div>
+              <div style="display: flex; flex-direction: row">
+                <h4 style="margin-right: 5px; color: #297be0b1">Gmail:</h4>
+                <p>Steve999@gmail.com</p>
+              </div>
             </div>
             <div class="theodoi">
-              <div><p>0 Đang theo dõi</p></div>
+              <div
+                style="
+                  border-right: 1px solid rgba(0, 0, 0, 0.421);
+                  margin-right: 10px;
+                "
+              >
+                <p>0 Đang theo dõi</p>
+              </div>
               <div><p>999 Người theo dõi</p></div>
             </div>
           </div>
         </div>
         <p>Loại tài khoản: Nhà bán lẻ</p>
-        <p>Số sản phẩm: 13 Sản phẩm</p>
-        <button type="submit" class="btn them"><a href="suanguoidung.html">Sửa tài khoản</a></button>
+        <p>Số sản phẩm: 15 Sản phẩm</p>
+        <button type="submit" class="btn them">
+          <a href="suanguoidung.html">Sửa tài khoản</a>
+        </button>
         <button type="submit" class="btn xoasanpham">
           <a href="admin_login.html" style="text-decoration: none; color: white"
             >Đăng xuất</a

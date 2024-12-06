@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="../css/topadmin.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/quanlyuser.css" />
+    <link rel="stylesheet" href="../css/admin_input.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
@@ -18,9 +23,26 @@
       <div class="top-left">
         <img src="../img/logo.png" class="logo" />
       </div>
-      <div class="top-mid"></div>
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="taikhoan.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query"
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button>
+        </form>
+      </div>
       <div class="top-right">
-        <a>
+        <a href="index.html">
           <img src="../img/home-smile-solid-240.png" class="home" />
         </a>
         <a>
@@ -40,7 +62,7 @@
     </div>
 
     <!-- funcion -->
-     
+
     <div class="khung">
       <h2>Thêm người dùng</h2>
       <form>
@@ -57,19 +79,26 @@
           <input type="text" id="motta" name="motta" />
         </div>
         <div class="form-group button-sua-in">
-          <button type="submit" class="btn sua"><a href="quanlyuser.html">Thêm người dùng</a></button>
+          <button type="submit" class="btn sua">
+            <a href="quanlyuser.html">Thêm người dùng</a>
+          </button>
         </div>
       </form>
       <div>
         <h2>Tìm kiếm người dùng</h2>
         <div class="search-bar">
           <input type="text" placeholder="Tìm kiếm khách hàng..." />
-          <button>Tìm</button>
+          <button>
+            <a
+              href="quanlyuser.html"
+              style="color: white; text-decoration: none"
+              >Tìm</a
+            >
+          </button>
         </div>
         <table>
           <thead>
             <tr>
-              
               <th>Tên người dùng</th>
               <th>Email</th>
               <th>Số điện thoại</th>
@@ -83,76 +112,82 @@
               <td>Pmalone@gmail.com</td>
               <td>0904521987</td>
               <td>
-                <button class="btn sua"><a href="suanguoidung.html">Sửa</a></button>
+                <button class="btn sua">
+                  <a href="suanguoidung.html">Sửa</a>
+                </button>
               </td>
               <td>
                 <div class="cart-item-2">
                   <div class="left">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" class="check" />
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-             
               <td>Nguyễn Văn B</td>
               <td>NguyenB@gmail.com</td>
               <td>0965746255</td>
               <td>
-                <button class="btn sua"><a href="suanguoidung.html">Sửa</a></button>
+                <button class="btn sua">
+                  <a href="suanguoidung.html">Sửa</a>
+                </button>
               </td>
               <td>
                 <div class="cart-item-2">
                   <div class="left">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" class="check" />
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-            
               <td>Pham Văn C</td>
               <td>Phanc@gmail.com</td>
               <td>0365414558</td>
               <td>
-                <button class="btn sua"><a href="suanguoidung.html">Sửa</a></button>
+                <button class="btn sua">
+                  <a href="suanguoidung.html">Sửa</a>
+                </button>
               </td>
               <td>
                 <div class="cart-item-2">
                   <div class="left">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" class="check" />
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-            
               <td>Nguyễn D</td>
               <td>NguyenD@gmail.com</td>
               <td>0966581211</td>
               <td>
-                <button class="btn sua"><a href="suanguoidung.html">Sửa</a></button>
+                <button class="btn sua">
+                  <a href="suanguoidung.html">Sửa</a>
+                </button>
               </td>
               <td>
                 <div class="cart-item-2">
                   <div class="left">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" class="check" />
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              
               <td>Nguyễn E</td>
               <td>NguyenD@gmail.com</td>
               <td>0944744236</td>
               <td>
-                <button class="btn sua"><a href="suanguoidung.html">Sửa</a></button>
+                <button class="btn sua">
+                  <a href="suanguoidung.html">Sửa</a>
+                </button>
               </td>
               <td>
                 <div class="cart-item-2">
                   <div class="left">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" class="check" />
                   </div>
                 </div>
               </td>
@@ -161,13 +196,13 @@
         </table>
         <div class="phantrang_container">
           <div class="phantrang_items">
-            <a >1</a>
+            <a href="quanlyuser_button.html">1</a>
           </div>
           <div class="phantrang_items z">
-            <a >2</a>
+            <a href="quanlyuser_button2.html">2</a>
           </div>
           <div class="phantrang_items z">
-            <a >>></a>
+            <a href="quanlyuser_button2.html">>></a>
           </div>
         </div>
       </div>

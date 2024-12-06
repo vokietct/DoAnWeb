@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="../css/quanlysanpham.css" />
     <link rel="stylesheet" href="../css/quanlyuser.css" />
     <link rel="stylesheet" href="../css/suanguoidung.css" />
+    <link rel="stylesheet" href="../css/admin_input.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
@@ -20,9 +25,26 @@
       <div class="top-left">
         <img src="../img/logo.png" class="logo" />
       </div>
-      <div class="top-mid"></div>
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="taikhoan.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query"
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button>
+        </form>
+      </div>
       <div class="top-right">
-        <a>
+        <a href="index.html">
           <img src="../img/home-smile-solid-240.png" class="home" />
         </a>
         <a>
@@ -42,50 +64,71 @@
     </div>
     <!-- table -->
     <div class="khung">
-        <h1>Sửa Thông Tin Người Dùng</h1>
-        <div class="user-form">
-          <div class="user-image">
-            <img src="https://th.bing.com/th/id/OIP.sQ6EnzoemY0Glbe7-BpBpgHaFK?rs=1&pid=ImgDetMain" alt="User">
-            <button class="change-button">Thay đổi</button>
-          </div>
-            <div class="input_user"><form>
-                <div class="form-group">
-                  <label for="name">Tên</label>
-                  <input type="text" id="name" value="Nguyễn Văn B">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" value="NguyenvanB@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="email">Số điện thoại</label>
-                    <input type="tel" id="text" value="094551289">
-                  </div>
-                <div class="form-group">
-                    <label for="user-type">Trạng thái</label>
-                    <select id="user-type">
-                      <option value="admin">Hoạt động</option>
-                      <option value="user">Khóa</option>
-                    </select>
-                  </div>
-                  
-                <div class="gird_button">
-                    <div class="form-group button-sua-in">
-                        <button type="submit" class="btn sua"><a href="quanlyuser.html">Cập nhập</a></button>
-                    </div>
-                    <div class="form-group button-sua-in">
-                        <button
-                      onclick="alert('Bạn có chắc xóa người dùng');"
-                      class="btn xoasanpham"
-                      
-                    >
-                     <a href="quanlyuser.html"> Xóa người dùng</a>
-                    </button>
-                    </div>  
-                </div>      
-                
-              </form></div>
+      <h1>Sửa Thông Tin Người Dùng</h1>
+      <div class="user-form">
+        <div class="user-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5gViuGUHbx3_fIQEIdeLqHwV0SR4bpGkPXw&s"
+            alt="User"
+          />
+          <label
+            for="input_file"
+            class="change_button"
+            style="
+              background-color: #297be0b1;
+              color: white;
+              padding: 10px;
+              border-radius: 5px;
+            "
+            >Thay đổi</label
+          >
+          <input
+            style="display: none"
+            type="file"
+            id="input_file"
+            accept="image/*"
+          />
         </div>
+        <div class="input_user">
+          <form>
+            <div class="form-group">
+              <label for="name">Tên: </label>
+              <input type="text" id="name" value="Nguyễn Văn B" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input type="email" id="email" value="NguyenvanB@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label for="email">Số điện thoại: </label>
+              <input type="tel" id="text" value="094551289" />
+            </div>
+            <div class="form-group">
+              <label for="user-type">Trạng thái: </label>
+              <select id="user-type">
+                <option value="admin">Hoạt động</option>
+                <option value="user">Khóa</option>
+              </select>
+            </div>
+
+            <div class="gird_button">
+              <div class="form-group button-sua-in">
+                <button type="submit" class="btn sua">
+                  <a href="quanlyuser.html">Cập nhập</a>
+                </button>
+              </div>
+              <div class="form-group button-sua-in">
+                <button
+                  onclick="alert('Bạn có chắc xóa người dùng');"
+                  class="btn xoasanpham"
+                >
+                  <a href="quanlyuser.html"> Xóa người dùng</a>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
   <script src="../js/jsadmin.js"></script>

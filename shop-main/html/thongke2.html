@@ -1,0 +1,233 @@
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Người quản trị</title>
+    <link rel="stylesheet" href="../css/csadmin.css" />
+    <link rel="stylesheet" href="../css/topadmin.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/thongke.css" />
+    <link rel="stylesheet" href="../css/admin_input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="top-left">
+        <img src="../img/logo.png" class="logo" />
+      </div>
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="taikhoan.html" method="GET" class="search-form">
+          <input
+            placeholder="Search"
+            id="input"
+            class="input"
+            name="query"
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class="top-right">
+        <a href="index.html">
+          <img src="../img/home-smile-solid-240.png" class="home" />
+        </a>
+        <a>
+          <img src="../img/phone-call-solid-240.png" class="phone" />
+        </a>
+      </div>
+    </div>
+    <!-- topp -->
+    <!-- nội Dung-->
+    <div class="menu">
+      <h2>Menu</h2>
+      <a href="taikhoan.html">Tài khoản Admin</a>
+      <a href="quanlyuser.html">Quản lý người dùng</a>
+      <a href="quanlysanpham.html">Quản lý sản phẩm</a>
+      <a href="quanlydonhang.html">Quản lý đơn hàng</a>
+      <a href="thongke.html">Thống kê kinh doanh</a>
+    </div>
+
+    <!-- funcion -->
+    <div class="khung">
+      <h2 style="margin-bottom: 15px; color: #297be0b1">Thống kê kinh doanh</h2>
+      <div class="filter-section">
+        <div class="date-filter">
+          <label for="from-date">Từ:</label>
+          <input type="date" id="from-date" />
+          <label for="to-date">đến</label>
+          <input type="date" id="to-date" />
+        </div>
+        <a
+          class="filter-button"
+          href="thongke.html"
+          style="text-decoration: none; color: white"
+          >Thống kê</a
+        >
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Mặt hàng</th>
+            <th>Số lượng bán ra</th>
+            <th>Tổng tiền thu được</th>
+            <th>Mô tả</th>
+            <th>Xem hóa đơn</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max_1.png"
+                alt="Diện thoại"
+              />
+              <span>iPhone 16 Pro Max </span>
+            </td>
+            <td>10</td>
+            <td>300,000,000 VNĐ</td>
+            <td>Hiện đại</td>
+            <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-oppo-find-x8-xam-1.png"
+                alt="Diện thoại"
+              />
+              <span>OPPO Find X8</span>
+            </td>
+            <td>5</td>
+            <td>110,000,000 VNĐ</td>
+            <td>Đa chức năng</td>
+            <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png"
+                alt="Diện thoại"
+              />
+              <span>Samsung Galaxy S24</span>
+            </td>
+            <td>7</td>
+            <td>105,000,000 VNĐ</td>
+            <td>Hiện đại</td>
+            <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-redmi-note-13-pro-4g_13__1.png"
+                alt="Diện thoại"
+              />
+              <span>Xiaomi Realme 13 </span>
+            </td>
+            <td>10</td>
+            <td>300,000,000 VNĐ</td>
+            <td>Hiện đại</td>
+            <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_5__7_70.png"
+                alt="Diện thoại"
+              />
+              <span>Oppo Reno 12 </span>
+            </td>
+            <td>12</td>
+            <td>350,000,000 VNĐ</td>
+            <td>Hiện đại</td>
+            <td><a href="thongkesanpham.html">Xem hóa đơn</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="sale">
+        <p>
+          <strong style="color: #297be0b1">BÁN CHẠY NHẤT: </strong>Oppo Reno 12
+        </p>
+        <p>
+          <strong style="color: #297be0b1">BÁN Ế NHẤT: </strong>OPPO Find X8
+        </p>
+      </div>
+      <div class="phantrang_container">
+        <div class="phantrang_items z">
+          <a href="thongke.html">1</a>
+        </div>
+        <div class="phantrang_items">
+          <a href="thongke2.html">2</a>
+        </div>
+        <div class="phantrang_items z">
+          <a href="thongke.html">>></a>
+        </div>
+      </div>
+
+      <h2 style="margin-bottom: 15px; color: #297be0b1">
+        Top 5 khách hàng có doanh thu cao nhất
+      </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Khách hàng</th>
+            <th>Tổng doanh thu</th>
+            <th>Mô tả</th>
+            <th>Xem hóa đơn</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>khách hàng A</td>
+            <td>15.040.99 VNĐ</td>
+            <td>Mua nhiều.</td>
+            <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
+          </tr>
+          <tr>
+            <td>khách hàng B</td>
+            <td>16.230.34 VNĐ</td>
+            <td>Mua nhiều.</td>
+            <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
+          </tr>
+          <tr>
+            <td>khách hàng C</td>
+            <td>46.000.44 VNĐ</td>
+            <td>Mua nhiều.</td>
+            <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
+          </tr>
+          <tr>
+            <td>khách hàng D</td>
+            <td>98.099.34 VNĐ</td>
+            <td>Sản phẩm giá trị lớn</td>
+            <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
+          </tr>
+          <tr>
+            <td>khách hàng E</td>
+            <td>12.230.34 VNĐ</td>
+            <td>Khách quen</td>
+            <td><a href="thongkekhachhang.html">xem hóa đơn</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

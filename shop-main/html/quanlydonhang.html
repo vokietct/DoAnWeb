@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/quanlyuser.css" />
     <link rel="stylesheet" href="../css/quanlydonhang.css" />
+    <link rel="stylesheet" href="../css/admin_input.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
@@ -18,9 +23,25 @@
       <div class="top-left">
         <img src="../img/logo.png" class="logo" />
       </div>
-      <div class="top-mid"></div>
-      <div class="top-right">
-        <a>
+<!--Phần search-->
+<div class="InputContainer">
+  <form action="taikhoan.html" method="GET" class="search-form">
+    <input
+      placeholder="Search"
+      id="input"
+      class="input"
+      name="query"
+      type="text"
+    />
+    <!-- Button đóng vai trò là icon tìm kiếm -->
+    <button type="submit" class="labelforsearch">
+      <div class="searchIcon">
+        <i class="bx bx-search"></i>
+      </div>
+    </button>
+  </form>
+</div>      <div class="top-right">
+        <a href="index.html">
           <img src="../img/home-smile-solid-240.png" class="home" />
         </a>
         <a>
@@ -41,7 +62,7 @@
 
     <!-- funcion -->
     <div class="khung">
-      <h2>Lọc đơn hàng</h2>
+      <h2 style="margin-bottom: 15px;">Lọc đơn hàng</h2>
       <!-- <div class="filter-form">
         <form>
           <div class="form-group">
@@ -111,7 +132,7 @@
           <option value="da-giao-thanh-cong">Đã giao thành công</option>
           <option value="da-huy">Đã hủy</option>
         </select>
-        <button class="filter-button">Lọc</button>
+        <button class="filter-button"><a href="quanlydonhang.html" style="text-decoration: none;color: white;">Lọc</a></button>
         
       </div>
       <h2>Danh sách đơn hàng</h2>
@@ -135,7 +156,7 @@
             <td>Iphone 4</td>
             <td>Chưa xử lý</td>
             <td>Quận 3</td>
-            <td><a href="thongkekhachhang.html">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>02</td>
@@ -144,7 +165,7 @@
             <td>Iphone 5</td>
             <td>Đã xác nhận</td>
             <td>Quận 5</td>
-            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>03</td>
@@ -153,7 +174,7 @@
             <td>Iphone 6</td>
             <td>Đã xác nhận</td>
             <td>Quận 4</td>
-            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>04</td>
@@ -162,7 +183,7 @@
             <td>Iphone 7</td>
             <td>Đã hủy</td>
             <td>Quận 5</td>
-            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>05</td>
@@ -171,7 +192,7 @@
             <td>Iphone 8</td>
             <td>Đã xác nhận</td>
             <td>Quận 1</td>
-            <td><a href="thongkekhachhang2.html">Xem chi tiết</a></td>
+            <td><a href="thongkekhachhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
         </tbody>
       </table>

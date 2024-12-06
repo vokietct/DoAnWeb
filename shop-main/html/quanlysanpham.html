@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="../css/topadmin.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/quanlysanpham.css" />
+    <link rel="stylesheet" href="../css/admin_input.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
@@ -18,9 +23,25 @@
       <div class="top-left">
         <img src="../img/logo.png" class="logo" />
       </div>
-      <div class="top-mid"></div>
-      <div class="top-right">
-        <a>
+<!--Phần search-->
+<div class="InputContainer">
+  <form action="taikhoan.html" method="GET" class="search-form">
+    <input
+      placeholder="Search"
+      id="input"
+      class="input"
+      name="query"
+      type="text"
+    />
+    <!-- Button đóng vai trò là icon tìm kiếm -->
+    <button type="submit" class="labelforsearch">
+      <div class="searchIcon">
+        <i class="bx bx-search"></i>
+      </div>
+    </button>
+  </form>
+</div>      <div class="top-right">
+        <a href="index.html">
           <img src="../img/home-smile-solid-240.png" class="home" />
         </a>
         <a>
@@ -53,7 +74,7 @@
           <h2>Tìm kiếm sản phẩm</h2>
           <div class="search-bar">
             <input type="text" placeholder="Tìm kiếm khách hàng..." />
-            <button>Tìm</button>
+            <button><a href="quanlysanpham.html " style="color: white;text-decoration: none;">Tìm</a></button>
           </div>
         <table>
           <thead>
@@ -78,12 +99,12 @@
               <td>39,000,000 VNĐ</td>
               <td>Hiện đại</td>
               <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sủa sản phẩm</a></button>
+                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
                 <button
                   onclick="alert('Bạn có chắc xóa sản phẩm');"
                   class="btn xoasanpham"
                 >
-                  Xóa sản phẩm
+                  <a href="quanlysanpham.html">Xóa sản phẩm</a>
                 </button>
               </td>
             </tr>
@@ -101,12 +122,14 @@
               <td>22,000,000 VNĐ</td>
               <td>Hiện đại</td>
               <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sủa sản phẩm</a></button>
+                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
                 <button
                   onclick="alert('Bạn có chắc xóa sản phẩm');"
                   class="btn xoasanpham"
+                  
                 >
-                  Xóa sản phẩm
+                <a href="quanlysanpham.html">Xóa sản phẩm</a>
+
                 </button>
               </td>
             </tr>
@@ -124,12 +147,13 @@
               <td>20,000,000 VNĐ</td>
               <td>Hiện đại</td>
               <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sủa sản phẩm</a></button>
+                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
                 <button
                   onclick="alert('Bạn có chắc xóa sản phẩm');"
                   class="btn xoasanpham"
                 >
-                  Xóa sản phẩm
+                <a href="quanlysanpham.html">Xóa sản phẩm</a>
+
                 </button>
               </td>
             </tr>
@@ -147,12 +171,13 @@
               <td>28,000,000 VNĐ</td>
               <td>Hiện đại</td>
               <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sủa sản phẩm</a></button>
+                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
                 <button
                   onclick="alert('Bạn có chắc xóa sản phẩm');"
                   class="btn xoasanpham"
                 >
-                  Xóa sản phẩm
+                <a href="quanlysanpham.html">Xóa sản phẩm</a>
+
                 </button>
               </td>
             </tr>
@@ -170,12 +195,13 @@
               <td>17,000,000 VNĐ</td>
               <td>Hiện đại</td>
               <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sủa sản phẩm</a></button>
+                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
                 <button
                   onclick="alert('Bạn có chắc xóa sản phẩm');"
                   class="btn xoasanpham"
                 >
-                  Xóa sản phẩm
+                <a href="quanlysanpham.html">Xóa sản phẩm</a>
+
                 </button>
               </td>
             </tr>
@@ -184,13 +210,14 @@
       </div>
       <div class="phantrang_container">
         <div class="phantrang_items">
-          <a >1</a>
+          <a href="quanlysanpham.html">1</a>
         </div>
         <div class="phantrang_items z">
-          <a >2</a>
+          <a href="quanlysanpham2.html">2</a>
         </div>
         <div class="phantrang_items z">
-          <a >>></a>
+          <a href="quanlysanpham2.html" >>></a>
+        </div>
     </div>
   </body>
   <script src="../js/jsadmin.js"></script>
