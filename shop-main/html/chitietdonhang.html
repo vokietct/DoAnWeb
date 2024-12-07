@@ -1,0 +1,154 @@
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Người quản trị</title>
+    <link rel="stylesheet" href="../css/csadmin.css" />
+    <link rel="stylesheet" href="../css/topadmin.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/thongkesanpham.css" />
+    <link rel="stylesheet" href="../css/admin_input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="top-left">
+        <img src="../img/logo.png" class="logo" />
+      </div>
+      <!--Phần search-->
+      <div class="InputContainer">
+        <form action="quanlysanpham.html" method="GET" class="search-form">
+          <input
+            placeholder="Tên sản phẩm cần tìm"
+            id="input"
+            class="input"
+            name="query"
+            type="text"
+          />
+          <!-- Button đóng vai trò là icon tìm kiếm -->
+          <button type="submit" class="labelforsearch">
+            <div class="searchIcon">
+              <i class="bx bx-search"></i>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class="top-right">
+        <a href="index.html">
+          <img src="../img/home-smile-solid-240.png" class="home" />
+        </a>
+        <a>
+          <img src="../img/phone-call-solid-240.png" class="phone" />
+        </a>
+      </div>
+    </div>
+    <!-- topp -->
+    <!-- nội Dung-->
+    <div class="menu">
+      <h2>Menu</h2>
+      <a href="taikhoan.html">Tài khoản Admin</a>
+      <a href="quanlyuser.html">Quản lý người dùng</a>
+      <a href="quanlysanpham.html">Quản lý sản phẩm</a>
+      <a href="quanlydonhang.html">Quản lý đơn hàng</a>
+      <a href="thongke.html">Thống kê kinh doanh</a>
+    </div>
+
+    <!-- funcion -->
+    <div class="khung">
+      <div class="filter-section">
+        <div class="date-filter">
+          <label for="from-date">Từ:</label>
+          <input type="date" id="from-date" />
+          <label for="to-date">đến</label>
+          <input type="date" id="to-date" />
+        </div>
+        <label for="status" class="status-label">Trạng thái:</label>
+        <select id="status" name="status">
+          <option value="all">Trạng thái</option>
+          <option value="chua-xu-ly">Chưa xử lý</option>
+          <option value="da-xac-nhan">Đã xác nhận</option>
+          <option value="da-giao-thanh-cong">Đã giao thành công</option>
+          <option value="da-huy">Đã hủy</option>
+        </select>
+        <button class="filter-button">
+          <a
+            href="thongkekhachhang.html"
+            style="text-decoration: none; color: white"
+            >Lọc</a
+          >
+        </button>
+      </div>
+      <h2 style="color: #297be0b1; margin-bottom: 15px">Khách hàng A</h2>
+      <table>
+        <thead>
+          <tr style="color: white">
+            <th>Sản phẩm mua</th>
+            <th>Địa chỉ giao hàng</th>
+            <th>Ngày mua</th>
+            <th>Thành tiền</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>iPhone 16 Pro Max</td>
+            <td>71 Ký Hòa, Phường 11, Quận 5, TP.HCM</td>
+            <td>Ngày mua: 19/08/2024</td>
+            <td>33.300.000vnđ</td>
+            <td>Chưa xác nhận</td>
+          </tr>
+          <tr>
+            <td>iPhone 16 Pro Max</td>
+            <td>71 Ký Hòa, Phường 11, Quận 5, TP.HCM</td>
+            <td>Ngày mua: 19/08/2024</td>
+            <td>33.300.000vnđ</td>
+            <td>Đã xác nhận</td>
+          </tr>
+          <tr>
+            <td>iPhone 16 Pro Max</td>
+            <td>71 Ký Hòa, Phường 11, Quận 5, TP.HCM</td>
+            <td>Ngày mua: 19/08/2024</td>
+            <td>33.300.000vnđ</td>
+            <td>Đã xác nhận</td>
+          </tr>
+          <tr>
+            <td>iPhone 16 Pro Max</td>
+            <td>71 Ký Hòa, Phường 11, Quận 5, TP.HCM</td>
+            <td>Ngày mua: 19/08/2024</td>
+            <td>33.300.000vnđ</td>
+            <td>Đã xác nhận</td>
+          </tr>
+          <tr>
+            <td>iPhone 16 Pro Max</td>
+            <td>71 Ký Hòa, Phường 11, Quận 5, TP.HCM</td>
+            <td>Ngày mua: 19/08/2024</td>
+            <td>33.300.000vnđ</td>
+            <td>Đã xác nhận</td>
+          </tr>
+          <tr>
+            <td>iPhone 16 Pro Max</td>
+            <td>71 Ký Hòa, Phường 11, Quận 5, TP.HCM</td>
+            <td>Ngày mua: 19/08/2024</td>
+            <td>33.300.000vnđ</td>
+            <td>Đã xác nhận</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="sale">
+        <p><strong>TỔNG TIỀN THU ĐƯỢC: </strong>303.000.000vnđ</p>
+      </div>
+      <div class="button-container">
+        <button type="submit" class="sua sua_ben_trai">
+          <a href="quanlydonhang.html">Quay lại</a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
