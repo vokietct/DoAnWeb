@@ -48,9 +48,9 @@ table td:nth-child(5) {
 .filter-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 20px;
-  flex-wrap: nowrap; /* Giữ các phần tử trên một hàng */
+  flex-wrap: wrap; /* Giữ các phần tử trên một hàng */
 }
 
 .filter-section select,
