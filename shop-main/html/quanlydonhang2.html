@@ -142,10 +142,10 @@
             <th>Mã đơn</th>
             <th>Khách hàng</th>
             <th>Ngày đặt</th>
-            <th>Sản phẩm</th>
+
             <th>Trạng thái</th>
             <th>Địa chỉ giao hàng</th>
-            <th>Xem đơn hàng</th>
+            <th style="width: 126px;">Xem đơn hàng</th>
           </tr>
         </thead>
         <tbody>
@@ -153,17 +153,30 @@
             <td>01</td>
             <td>khách hàng a</td>
             <td>29-01-2024</td>
-            <td>Iphone 4</td>
-            <td id="chk1st"><input id="chk1" type="checkbox" onchange="XacNhanDonHang(this)"/> Chưa xử lý</td>
-            <td>Quận 3</td>
+    
+            <td >
+              <select style="padding: 3px; border-radius: 5px">
+               <option value="Chuaxuly">Đã giao thành công</option>
+               <option value="daxacnhan">Đã xác nhận</option>
+               <option value="dagiaothanhcong">Chưa xử lý</option>
+               <option value="dahuy">Đã hủy</option>
+              </select>
+            </td>
+            <td>Quận 5</td>
             <td><a href="chitietdonhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
           <tr>
             <td>02</td>
             <td>khách hàng B</td>
             <td>30-12-2024</td>
-            <td>Iphone 5</td>
-            <td id="chk2st"><input id="chk2" type="checkbox" onchange="XacNhanDonHang(this)"/> Chưa xử lý</td>
+      
+            <td> 
+              <select style="padding: 3px; border-radius: 5px">
+              <option value="Chuaxuly">Chưa xử lý</option>
+              <option value="daxacnhan">Đã xác nhận</option>
+              <option value="dagiaothanhcong">Đã giao thành công</option>
+              <option value="dahuy">Đã hủy</option>
+             </select></td>
             <td>Quận 5</td>
             <td><a href="chitietdonhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
@@ -171,8 +184,13 @@
             <td>03</td>
             <td>khách hàng C</td>
             <td>3-2-2024</td>
-            <td>Iphone 6</td>
-            <td id="chk3st"><input id="chk3" type="checkbox" onchange="XacNhanDonHang(this)"/> Chưa xử lý</td>
+    
+            <td><select style="padding: 3px; border-radius: 5px">
+              <option value="Chuaxuly">Đã xác nhận</option>
+              <option value="daxacnhan">Chưa xử lý</option>
+              <option value="dagiaothanhcong">Đã giao thành công</option>
+              <option value="dahuy">Đã hủy</option>
+             </select></td>
             <td>Quận 4</td>
             <td><a href="chitietdonhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
@@ -180,8 +198,13 @@
             <td>04</td>
             <td>khách hàng D</td>
             <td>30-1-2024</td>
-            <td>Iphone 7</td>
-            <td id="chk4st"><input id="chk4" type="checkbox" onchange="XacNhanDonHang(this)"/> Chưa xử lý</td>
+         
+            <td > <select style="padding: 3px; border-radius: 5px">
+              <option value="Chuaxuly">Đã hủy</option>
+              <option value="daxacnhan">Đã xác nhận</option>
+              <option value="dagiaothanhcong">Đã giao thành công</option>
+              <option value="dahuy">Chưa xử lý</option>
+             </select></td>
             <td>Quận 5</td>
             <td><a href="chitietdonhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
@@ -189,8 +212,13 @@
             <td>05</td>
             <td>khách hàng E</td>
             <td>30-12-2024</td>
-            <td>Iphone 8</td>
-            <td id="chk5st"><input id="chk5" type="checkbox" onchange="XacNhanDonHang(this)"/> Chưa xử lý</td>
+           
+            <td> <select style="padding: 3px; border-radius: 5px">
+              <option value="Chuaxuly">Chưa xử lý</option>
+              <option value="daxacnhan">Đã xác nhận</option>
+              <option value="dagiaothanhcong">Đã giao thành công</option>
+              <option value="dahuy">Đã hủy</option>
+             </select></td>
             <td>Quận 1</td>
             <td><a href="chitietdonhang.html" style="text-decoration: none;">Xem chi tiết</a></td>
           </tr>
@@ -205,6 +233,11 @@
         </div>
         <div class="phantrang_items z">
           <a href="quanlydonhang.html">>></a>
+        </div>
+      </div>
+      <div style="width: 100%; display: flex;justify-content: flex-end;align-items: center;">
+        <div style="width: 120px;height: 50px;background-color: #297be0b1;display: flex;justify-content: center;align-items: center;border-radius: 5px;">
+          <a style="color: white;text-decoration: none;" href="quanlydonhang.html">Lưu Trạng Thái</a>
         </div>
       </div>
     </div>

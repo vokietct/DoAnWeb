@@ -62,166 +62,193 @@
     <!-- table -->
     <div class="khung">
       <h2>Thêm sản phẩm</h2>
-    <form>
-      <div class="form-group">
-          <label for="product-name">Tên sản phẩm</label>
-          <input type="text" id="product-name" name="product-name">
+      <form>
+        <div class="form-group">
+            <label for="product-name">Tên sản phẩm</label>
+            <input type="text" id="product-name" name="product-name">
+        </div>
+        <div class="form-group">
+            <label for="soluong">Số lượng sản phẩm</label>
+            <input type="text" id="soluong" name="soluong">
+        </div>
+        <div class="form-group">
+          <label for="motta">Hãng</label>
+          <select style="padding: 3px; border-radius: 5px">
+            <option value="iPhone">iPhone</option>
+            <option value="Ss">SamSung</option>
+            <option value="xiaomi">Xiaomi</option>
+            <option value="rea">realme</option>
+            <option value="Oppo">OPPO</option>
+          </select>
       </div>
-      <div class="form-group">
-          <label for="soluong">Số lượng sản phẩm</label>
-          <input type="text" id="soluong" name="soluong">
+        <div class="form-group">
+          <label for="product-name">Màu</label>
+          <select style="padding: 3px; border-radius: 5px">
+            <option value="Bac">Titan Bạc</option>
+            <option value="Den">Titan Đen</option>
+            <option value="Xanh">Titan Xanh</option>
+            <option value="Hong">Titan Hồng</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="motta">Dung lượng</label>
+          <select style="padding: 3px; border-radius: 5px">
+            <option value="128">128GB</option>
+            <option value="256">256GB</option>
+            <option value="512">512GB</option>
+          </select>
       </div>
-      <div class="form-group">
-          <label for="motta">Mô tả sản phẩm</label>
-          <input type="text" id="motta" name="motta">
-      </div>
-      <div class="form-group">
-          <label for="add-image">Hình ảnh sản phẩm</label>
-          <input type="file" id="add-image" name="add-image">
-      </div>
-      <div class="form-group button-sua-in">
-          <button type="submit" class="btn sua"><a href="quanlysanpham.html">Thêm sản phẩm</a></button>
+        <div class="form-group">
+            <label for="motta">Mô tả sản phẩm</label>
+            <input type="text" id="motta" name="motta">
+        </div>
+        <div class="form-group">
+            <label for="add-image">Hình ảnh sản phẩm</label>
+            <input type="file" id="add-image" name="add-image">
+        </div>
+        <div class="form-group button-sua-in">
+          <button class="btn button-sua-ngoai sua"><a href="quanlysanpham.html">Thêm sản phẩm</a></button>
         </div> 
-  </form>
-      <div>
+    </form>
         <div>
-          <h2>Tìm kiếm sản phẩm</h2>
-          <div class="search-bar">
-            <input type="text" placeholder="Tìm kiếm khách hàng..." />
-            <button><a href="quanlysanpham2.html" style="color: white;text-decoration: none;">Tìm</a></button>
-          </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Mặt hàng</th>
-              <th>Số lượng</th>
-              <th>Giá bán</th>
-              <th>Mô tả</th>
-              <th>Thao tác</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max_1.png"
-                  alt="Diện thoại"
-                />
-                <span>iPhone 16 Pro Max </span>
-              </td>
-              <td>150</td>
-              <td>39,000,000 VNĐ</td>
-              <td>Hiện đại</td>
-              <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
-                <button
-                  onclick="alert('Bạn có chắc xóa sản phẩm');"
-                  class="btn xoasanpham"
-                >
-                <a href="quanlysanpham.html">Xóa sản phẩm</a>
-
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-oppo-find-x8-xam-1.png"
-                  alt="Diện thoại"
-                />
-                <span>Oppo Find X8</span>
-              </td>
-              <td>50</td>
-              <td>22,000,000 VNĐ</td>
-              <td>Hiện đại</td>
-              <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
-                <button
-                  onclick="alert('Bạn có chắc xóa sản phẩm');"
-                  class="btn xoasanpham"
-                >
-                <a href="quanlysanpham.html">Xóa sản phẩm</a>
-
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png"
-                  alt="Diện thoại"
-                />
-                <span>Samsung Galaxy S24</span>
-              </td>
-              <td>70</td>
-              <td>20,000,000 VNĐ</td>
-              <td>Hiện đại</td>
-              <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
-                <button
-                  onclick="alert('Bạn có chắc xóa sản phẩm');"
-                  class="btn xoasanpham"
-                >
-                <a href="quanlysanpham.html">Xóa sản phẩm</a>
-
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-redmi-note-13-pro-4g_13__1.png"
-                  alt="Diện thoại"
-                />
-                <span>Xiaomi Realme 12</span>
-              </td>
-              <td>20</td>
-              <td>28,000,000 VNĐ</td>
-              <td>Hiện đại</td>
-              <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
-                <button
-                  onclick="alert('Bạn có chắc xóa sản phẩm');"
-                  class="btn xoasanpham"
-                >
-                <a href="quanlysanpham.html">Xóa sản phẩm</a>
-
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_5__7_70.png"
-                  alt="Diện thoại"
-                />
-                <span>Oppo Reno 12</span>
-              </td>
-              <td>78</td>
-              <td>17,000,000 VNĐ</td>
-              <td>Hiện đại</td>
-              <td>
-                <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
-                <button
-                  onclick="alert('Bạn có chắc xóa sản phẩm');"
-                  class="btn xoasanpham"
-                >
-                <a href="quanlysanpham.html">Xóa sản phẩm</a>
-
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+          <div>
+            <h2>Tìm kiếm sản phẩm</h2>
+            <div class="search-bar">
+              <input type="text" placeholder="Tìm kiếm khách hàng..." />
+              <button><a href="quanlysanpham.html " style="color: white;text-decoration: none;">Tìm</a></button>
+            </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Mặt hàng</th>
+                <th>Số lượng</th>
+                <th>Giá bán</th>
+                <th>Mã</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max_1.png"
+                    alt="Diện thoại"
+                  />
+                  <span>iPhone 16 Pro Max </span>
+                </td>
+                <td>150</td>
+                <td>39,000,000 VNĐ</td>
+                <td>#1</td>
+                <td>
+                  <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
+                  <button
+                    onclick="alert('Bạn có chắc xóa sản phẩm');"
+                    class="btn xoasanpham"
+                  >
+                  <a href="quanlysanpham.html">Xóa sản phẩm</a>
+  
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-oppo-find-x8-xam-1.png"
+                    alt="Diện thoại"
+                  />
+                  <span>Oppo Find X8</span>
+                </td>
+                <td>50</td>
+                <td>22,000,000 VNĐ</td>
+                <td>#2</td>
+                <td>
+                  <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
+                  <button
+                    onclick="alert('Bạn có chắc xóa sản phẩm');"
+                    class="btn xoasanpham"
+                  >
+                  <a href="quanlysanpham.html">Xóa sản phẩm</a>
+  
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png"
+                    alt="Diện thoại"
+                  />
+                  <span>Samsung Galaxy S24</span>
+                </td>
+                <td>70</td>
+                <td>20,000,000 VNĐ</td>
+                <td>#3</td>
+                <td>
+                  <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
+                  <button
+                    onclick="alert('Bạn có chắc xóa sản phẩm');"
+                    class="btn xoasanpham"
+                  >
+                  <a href="quanlysanpham.html">Xóa sản phẩm</a>
+  
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-redmi-note-13-pro-4g_13__1.png"
+                    alt="Diện thoại"
+                  />
+                  <span>Xiaomi Realme 12</span>
+                </td>
+                <td>20</td>
+                <td>28,000,000 VNĐ</td>
+                <td>#4</td>
+                <td>
+                  <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
+                  <button
+                    onclick="alert('Bạn có chắc xóa sản phẩm');"
+                    class="btn xoasanpham"
+                  >
+                  <a href="quanlysanpham.html">Xóa sản phẩm</a>
+  
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_5__7_70.png"
+                    alt="Diện thoại"
+                  />
+                  <span>Oppo Reno 12</span>
+                </td>
+                <td>78</td>
+                <td>17,000,000 VNĐ</td>
+                <td>#5</td>
+                <td>
+                  <button class="btn button-sua-ngoai sua"><a href="suasanpham.html">Sửa sản phẩm</a></button>
+                  <button
+                    onclick="alert('Bạn có chắc xóa sản phẩm');"
+                    class="btn xoasanpham"
+                  >
+                  <a href="quanlysanpham.html">Xóa sản phẩm</a>
+  
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       <div class="phantrang_container">
         <div class="phantrang_items z">
           <a href="quanlysanpham_button.html">1</a>
