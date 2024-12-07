@@ -99,3 +99,23 @@ textarea {
   border: 1px solid #ccc; /* Đường viền tùy chọn */
   border-radius: 5px; /* Tùy chọn bo góc */
 }
+table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+table {
+  border-color: #ccc;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+tr:nth-child(odd){
+  background-color: #297be090;
+}
+td input {
+  font-size: medium;
+  border: none;
+  background-color: inherit;
+}
+td input:focus {
+  outline: none;
+}
