@@ -12,3 +12,11 @@ modal.addEventListener('click', function(e){
         suaproduct()
     }
 })
+
+function XacNhanDonHang(obj){
+    var st = document.getElementById(obj.id+"st");
+    var btn = document.getElementById(obj.id);
+    if(btn.checked == true){
+        st.innerHTML = "Đã xác nhận";
+    }
+}
