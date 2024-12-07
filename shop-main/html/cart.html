@@ -9,6 +9,7 @@
     />
     <title>BKHT Cart</title>
     <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/duongdan.css">
   </head>
   <body>
     <header id="top" class="dau">
@@ -57,7 +58,7 @@
                   <h5>Thông báo</h5>
                   <hr>
                   <div class="tooltip-2-nd-thongbao">
-                    <p>Trống</p>
+                    <p>Địa chỉ: 56 Nguyễn Trãi,TP HCM </p>
                   </div>
                 </div>
                 <div class="tooltip-4">
@@ -88,12 +89,19 @@
         </div>
       </div>
     </header>
+
+      <!-- Đường dẫn -->
+      <div class="duongdan">
+        <div class="nd_duongdan">
+          <i class="bx bx-home" style="color: #297be0b1"></i>
+          <a href="trangchu.html">Trang chủ</a>
+          <i class="bx bxs-chevrons-right" style="margin-right: 5px"></i>
+          <p>Giỏ hàng</p>
+        </div>
+      </div>
     
     <div class="cart-container">
       <div class="cart-item-1">
-        <a href="trangchu.html">
-          <i class="bx bx-left-arrow-alt"></i>
-        </a>
         <h3>Giỏ hàng của bạn</h3>
       </div>
 
@@ -165,7 +173,7 @@
               src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/e/f/ef-mf956t_001_front_gray_240514.png"
               alt="anh1"
             />
-            <p>Ốp Samsung giảm 70%</p>
+            <p>Hiệu Samsung giảm 5%</p>
             <div><a href="sanpham.html">Xem ngay</a></div>
           </div>
         </div>
@@ -224,7 +232,7 @@
               src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/o/p/op-lung-iphone-16-pro-max-uag-monarch-pro_4_.png"
               alt="anh1"
             />
-            <p>Ốp iPhone giảm 30%</p>
+            <p>iPhone 13 giảm 20%</p>
             <div><a href="sanpham.html">Xem ngay</a></div>
           </div>
           <div class="cart-item-5-nd-1">
@@ -232,7 +240,7 @@
               src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_-_2024-10-22t094735.484.png"
               alt="anh2"
             />
-            <p>Miếng dán giảm 10%</p>
+            <p>Tặng miếng dán </p>
             <div><a href="sanpham.html">Xem ngay</a></div>
           </div>
         </div>
@@ -320,7 +328,7 @@
         </div>
         <div class="muangay-right">
           <div class="button">
-            <a onclick="alert('Bạn có chắc mua hàng?')" href="muathanhcong.html">Mua Ngay</a>
+            <a onclick="return confirm('Bạn có chắc chắn muốn mua hàng không?')" href="muathanhcong.html">Mua Ngay</a>
           </div>
         </div>
       </div>
