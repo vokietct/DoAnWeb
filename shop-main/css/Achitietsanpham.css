@@ -112,12 +112,10 @@
 .variant.active, .variant.selected {
     background: #297be0b1;
     color: #fff;
-    border-color: #297be0b1;
 }
-
-.variant:hover {
+/* .variant:hover {
     background:#ccdff6b1;
-}
+} */
 
 .variants .variant, .storage .variant {
     margin-right: 10px;

@@ -66,3 +66,20 @@ function hideTooltip() {
   tooltip.classList.remove("show");
   overlay.classList.remove("show");
 }
+
+function ChonMau(obj, tt){
+  var a = obj.id;
+  var m;
+  if(tt == "color") m = 4;
+  else m = 3;
+  for(var i=1; i<=m; i++){
+    var tmp = tt+i;
+    if(tmp == a) continue;
+    // document.getElementById(tmp).style.backgroundColor = 'white';
+    // document.getElementById(tmp).style.color = 'black';
+    document.getElementById(tmp).className = 'variant';
+  }
+  // document.getElementById(a).style.backgroundColor = '#297be0b1';
+  // document.getElementById(a).style.color = 'white';
+  document.getElementById(a).className = 'variant active';
+}
