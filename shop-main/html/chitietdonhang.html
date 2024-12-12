@@ -16,6 +16,12 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="../css/cart_history.css" /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="../js/d.js"></script>
   </head>
   <body>
     <div class="header">
@@ -63,38 +69,98 @@
     <!-- funcion -->
     <div class="khung">
       <h2 style="color: #297be0b1; margin-bottom: 15px">Mã đơn: 01</h2>
-      <h4 style="margin: 5px 0">Họ Tên:Nguyễn Văn A</h4>
-      <h4 style="margin: 5px 0">Sdt: (+84)333 333 333</h4>
-      <h4 style="margin: 5px 0">Email: A752@gmail.com</h4>
 
-      <table>
-        <thead>
-          <tr style="color: white">
-            <th>Sản phẩm mua</th>
-            <th>Địa chỉ giao hàng</th>
-            <th>Ngày mua</th>
-            <th>Thành tiền</th>
-            <th>Trạng thái</th>
-            <th>Thông tin thanh toán</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>iPhone 16 Pro Max</td>
-            <td>56 Nguyễn Trãi, Quận 5, TP.HCM</td>
-            <td>Ngày mua: 19/08/2024</td>
-            <td>33.300.000vnđ</td>
-            <td>Chưa xử lý</td>
-            <td style="display: flex; flex-direction: column">
-              <h4 style="margin: 0">Phương thức: Thẻ thanh toán</h4>
-              <h4 style="margin: 0">Card Number: 1234 2345 5678 5637</h4>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="sale">
-        <p><strong>TỔNG TIỀN: </strong>33.300.000vnđ</p>
-      </div>
+      
+      <div class="cart_history_container">
+        <div class="cart_history_container_tieude">
+          <h3>Chi tiết đơn hàng</h3>
+        </div>
+        <div class="cart-history-nd">
+                    <div class="cart-history-nd-1" id="hoanthanh">
+                        <div class="nd-1_1 x">
+                        </div>
+                        <div class="nd-1_2 x">
+                            <i style="color:rgb(51, 250, 184);" class='bx bxs-truck bx-flashing aa' ></i>
+                            <p style="color: rgb(51, 250, 184);">Giao hàng thành công</p>
+                            <p style="color: #297be0b1;">-HOÀN THÀNH-</p>
+                        </div>
+                    </div>
+    
+                    <div class="cart-history-nd-2">
+                        <div class="nd-2_1">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:350:0/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/m/image_1172.png"
+                             alt="anh1">
+                            <p>Samsung Galaxy Z Fold6</p>
+                        </div>
+                        <div class="nd-2_1_1">
+                          <p>Số lượng</p>
+                          <input type="number" step="1" value="1" min="1" max="100" class="sl_btn"/>
+                          <div>
+                            <!-- <button class="sl_btn" id="sl1-" onclick="ThayDoiSL(this);">-</button>
+                            <input type="number" value="1" style="width: 25px;" id="sli1" readonly/>
+                            <button class="sl_btn" id="sl1+" onclick="ThayDoiSL(this);">+</button> -->
+                          </div>
+                        </div>
+                        <div class="nd-2_2">
+                            <p>41.990.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cart-history-nd-2">
+                        <div class="nd-2_1">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max_1.png"
+                            alt="anh1">
+                            <p>iPhone 16 Pro Max 256GB</p>
+                        </div>
+                        <div class="nd-2_1_1">
+                          <p>Số lượng</p>
+                          <input type="number" step="1" value="1" min="1" max="100" class="sl_btn"/>
+                          <div>
+                            <!-- <button class="sl_btn" id="sl2-" onclick="ThayDoiSL(this);">-</button>
+                            <input type="number" value="1" style="width: 25px;" id="sli2" readonly/>
+                            <button class="sl_btn" id="sl2+" onclick="ThayDoiSL(this);">+</button> -->
+                          </div>
+                        </div>
+                        <div class="nd-2_2">
+                            <p>34.790.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cart-history-nd-2">
+                        <div class="nd-2_1">
+                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi_14t_pro_1_.png"
+                            alt="anh1">
+                            <p>Xiaomi 14T Pro</p>
+                        </div>
+                        <div class="nd-2_1_1">
+                          <p>Số lượng</p>
+                          <input type="number" step="1" value="1" min="1" max="100" class="sl_btn"/>
+                          <div>
+                            <!-- <button class="sl_btn" id="sl3-" onclick="ThayDoiSL(this);">-</button>
+                            <input type="number" value="1" style="width: 25px;" id="sli3" readonly/>
+                            <button class="sl_btn" id="sl3+" onclick="ThayDoiSL(this);">+</button> -->
+                          </div>
+                        </div>
+                        <div class="nd-2_2">
+                            <p>17.990.000đ</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="cart-history-nd-3">
+                      <p>Người nhận: Steve | SĐT: (+84)333 333 333</p>
+                      <p>Địa chỉ nhận hàng : 56 Nguyễn Trãi , Tp Hồ Chí Minh</p>
+                      <p>Ngày mua: 19/08/2024</p>
+                      <p>Thông tin thanh toán<br/>Phương thức: Thẻ thanh toán<br/>Card Number: 1234 2345 5678 5637</p>
+                    </div>
+    
+                    <div class="kettien">
+                        <div class="thanhtien">
+                            <h4 style="margin: 5px 0;">Thành tiền: </h4>
+                            <p style="color: #297be0b1;margin: 5px 0;">94.770.000đ</p>
+                        </div>
+                    </div>            
+        </div>
+    
+       </div>
     </div>
   </body>
 </html>
