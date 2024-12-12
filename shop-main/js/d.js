@@ -83,3 +83,20 @@ function ChonMau(obj, tt){
   // document.getElementById(a).style.color = 'white';
   document.getElementById(a).className = 'variant active';
 }
+
+function ThayDoiSL(obj){
+  var a = obj.id;
+  var x = "sli";
+  var tmp = x + a[a.length-2];
+  console.log(tmp, a[a.length-2]);
+  var b = document.getElementById(tmp).value;
+  console.log(b);
+  if(a[a.length-1]=='-'){
+    if(b == 0) return;
+    else b--;
+  }
+  else {
+    b++;
+  }
+  document.getElementById(tmp).value = b;
+}
