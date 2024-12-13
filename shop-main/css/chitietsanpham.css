@@ -42,3 +42,7 @@
 table tr:nth-child(even) {
   background-color: #cccccc60;
 }
+.category {
+  border-color: #297be06c;
+  outline: #297be06c;
+}
